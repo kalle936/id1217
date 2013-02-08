@@ -37,12 +37,11 @@ int main(int argc, char ** argv)
     vector = malloc(sizeof(int) * size);
     #pragma omp parallel
     {
-        #pragma omp task
+        #pragma omp single
         {
             quicksort(0, size);
         }
     }
-    #pragma omp taskwait
     free(vector);
     return(EXIT_SUCCESS);
 }
