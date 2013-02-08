@@ -1,0 +1,14 @@
+Program that mimics UNIX command tee but is executed in parallel.
+
+This program reads from stdin and echoes it to both stdout and a file specified when starting
+the program. The main thread sets up every shared variable, allocating space on the heap for the
+buffer and then starts the three worker threads. Then the main thread waits for the worker threads
+to terminate and then cleans up by closing the file and freeing the space on the heap.
+
+The reader thread reads from stdin to a local buffer and then when space is available on the shared
+buffer it copies the local buffer to the buffer. This is done untill EOF is singaled when reading
+input.
+
+The writer threads write to its assigned place (either stdout or the file) until the reader singals
+that it is done by setting the shared variable done to true. When this shared variable is true the
+writer threads write the remaining of the buffer and then terminates. 

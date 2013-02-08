@@ -1,0 +1,60 @@
+Calculate the sum, min and max of a matrix in parallel.
+
+This is done by using a barrier in matrixSum11.c and then worker thread 0 calculating total values.
+In matrixSum12.c and matrixSum13.c shared variables are used to store the total values in the matrix,
+then the main thread prints the results when all the worker threads have terminated.
+
+Compile using make. Default rule for make will compile all three programs. To compile individiual
+program then make <program>.out can be used. For convenience make clean can be run to remove the binaries.
+
+Time evaluation: 
+(Using personal computer with 8 hardware threads at 2GHz)
+
+matrixSum11.out:
+    1 thread = 0.123s
+    2 threads = 0.068s
+    4 threads = 0.048s
+    8 threads = 0.035s
+    10 threads = 0.036s
+matrixSum12.out:
+    1 thread = 0.124s
+    2 threads = 0.067s
+    4 threads = 0.045s
+    8 threads = 0.030s
+    10 threads = 0.036s
+matrixSum13.out:
+    1 thread = 0.122s
+    2 threads = 0.067s
+    4 threads = 0.044s
+    8 threads = 0.032s
+    10 threads = 0.031s
+
+(Using atlantis)
+
+matrixSum11.out:
+    1 thread = 0.328s
+    2 threads = 0.168s
+    4 threads = 0.088s
+    8 threads = 0.049s
+    10 threads = 0.050s
+matrixSum12.out:
+    1 thread = 0.329s
+    2 threads = 0.168s
+    4 threads = 0.088s
+    8 threads = 0.053s
+    10 threads = 0.052s
+matrixSum13.out:
+    1 thread = 0.369s
+    2 threads = 0.195s
+    4 threads = 0.100s
+    8 threads = 0.054s
+    10 threads = 0.052s
+(Using all 24 cores result in 0.048s)
+
+The performance on my personal computer is very similair between the three programs with almost perfect performance gain between 1 and 2 threads.
+Then after this the performance gain is stagnating when additional threads are used. When more threads than hardware threads
+the performance is either worse or the same as using the same number of threads as hardware threads.
+
+On Atlantis the performance is worse which is really puzzling for me. It should be somewhat the same for seriel execution.
+However, the performance gain is much more linear on atlantis than on my own computer. This is probably because less interference of
+background processes and/or because better architecture for parallel computing.

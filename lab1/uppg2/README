@@ -1,0 +1,46 @@
+2. Quicksort (20 points)
+
+This is Karl Johan Andreassons solution to the parallelizaion of quicksort.
+
+To compile the program execute make (default build) or make quicksort.out.
+For convenience make clean can be used to remove the compiled program to 
+force a recompile.
+
+Usage of quicksort.out:
+
+DEFAULT NUMBER OF WORKERS = 10
+DEFAULT SIZE OF VECTOR = 1 000 000
+
+./quicksort.out <- Uses default value for both workers and size of vector.
+./quicksort.out 1000 <- Uses a vector of size 1000 with default number of workers.
+./quicksort 10000 4 <- Uses a vector of size 10 000 with 4 workers.
+
+The timing is used by a a method heavily inspired by the timing method in 
+1. Compute Sum, Min and Max of Matrix Elements
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Evaluation: 
+(Using 1 000 000 elements on a computer with 8 hardware threads at 2GHz)
+
+1 thread = 0.22s
+2 threads = 0.13s
+4 threads = 0.085s
+8 threads = 0.068s
+10 threads = 0.071s
+
+(Using 1 000 000 elements on atlantis)
+
+1 thread = 0.383s
+2 threads = 0.245s
+4 threads = 0.162s
+8 threads = 0.149s
+10 threads = 0.148s
+
+The performance gain on my personal computer is pretty good for 1 to 2 threads then it slows down significantly.
+When using more threads than hardware threads available the time increases which indicates 
+that contextswitching is expensive!
+
+On atlantis the times are a little slower which is in line with the results from assignment 1. However, here
+the parallelization is giving a more linear performance gain on my personal computer than on atlantis which is
+baffling. It should be the other way around. This have to be because the load on atlantis was higher than expected.
