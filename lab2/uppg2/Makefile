@@ -17,7 +17,7 @@ default: run
 	$(CC) $(CLFAGS) -o $*.out $*.c
 
 run: quicksort.out
-	./$^ $(SIZE) $(NWORKERS)
+	OMP_NUM_THREADS=$(NWORKERS) ./$^ $(SIZE)
 
 clean:
 	rm *.out

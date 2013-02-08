@@ -5,7 +5,7 @@
  * otherwise it will use default values which is NWORKERS = 10
  * and SIZE = 1000000.
  *
- * Can also be run through ./quicksort.out SIZE NWORKERS
+ * Can also be run through OMP_NUM_THREADS=NWORKERS ./quicksort.out SIZE
  */
 
 
