@@ -14,8 +14,11 @@ CFLAGS=-O -Wall -fopenmp -ansi -pedantic
 default: run
 
 %.out: %.c
+ifndef DEBUG
 	$(CC) $(CFLAGS) -o $*.out $*.c
-
+else
+	$(CC) $(CFLAGS) -D DEBUG -o $*.out $*.c
+endif
 run: quicksort.out
 	OMP_NUM_THREADS=$(NWORKERS) ./$^ $(SIZE)
 
