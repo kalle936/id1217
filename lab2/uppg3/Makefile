@@ -1,15 +1,22 @@
 .PHONY: run, clean
 
-CC=gcc
-CFLAGS=-Wall -fopenmp -O -ansi -pedantic
+CC=g++
+CFLAGS=-std=c++0x -fopenmp -O
+ifndef FP
+FP=out
+endif
+ifndef NT
+NT=8
+endif
 
 default: run
 
-%.out: %.c
-	$(CC) $(CFLAGS) -o $*.out $*.c
+%.out: %.cpp
+	$(CC) $(CFLAGS) -o $*.out $*.cpp
 
 run: palindromic.out
-	./$^
+	OMP_NUM_THREADS=$(NT) ./$^ $(FP)
 
 clean:
 	rm *.out
+	rm out
