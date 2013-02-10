@@ -30,7 +30,7 @@
 #include <unordered_set>
 #include <algorithm>
 
-#define WORDSFILE "words"
+#define WORDSFILE "words" /* Path to dictionary. */
 
 /**
  * Returns a copy the input reversed.
@@ -64,45 +64,50 @@ int main(int argc, char ** argv)
     /* Opens the dictionary. */
     std::ifstream words(WORDSFILE);
 
-    /* Read input and store in a vector. */
+    /* Read input and store in a vector as well as in a unordered_set. */
     std::vector<std::string> input;
     std::unordered_set<std::string> all_words;
+    /* All the palindromic words will be stored here. */
     std::unordered_set<std::string> palindromic;
-    std::string line;
+    std::string line; /* String used to store the read line. */
     if(words.is_open())
     {
         while(words.good())
         {
-            getline(words,line);
+            getline(words,line); /* Read line. */
+            /* Inserts it into the vector and the unordered_set. */
             input.push_back(line);
             all_words.insert(line);
         }
         words.close();
     }
-    //std::cout << "Size of the dictionary is " << input.size() << "." << std::endl;
-    //std::cout << "Size of the dictionary is " << all_words.size() << "." << std::endl;
-    int i;
-    double start_time, end_time;
-    start_time = omp_get_wtime();
+    int i; /* Index for iterating over the vector with words. */
+    double start_time, end_time; /* Used for timing- */
+    start_time = omp_get_wtime(); /* Time just before parallel work start. */
 #pragma omp parallel for
     for(i = 0; i < input.size(); ++i)
     {
+        /* If the reversed word exist in the unordered_set of all words it is palindromic. */
         if(all_words.find(get_reverse(input[i])) != all_words.end())
         {
+            /* Unordered_set is unfortunately not thread safe such as Microsoft's concurrent_unordered_set. */
 #pragma omp critical
             {
                 palindromic.insert(input[i]);
             }
         }
     }
-    end_time = omp_get_wtime();
+    end_time = omp_get_wtime(); /* Time it once again after the parallel work has been done. */
 
+    /* Writes to the output file. */
     for(auto it = palindromic.begin(); it != palindromic.end(); ++it)
     {
         output << *it << std::endl;
     }
     /* Close the file again. */
     output.close();
+    /* Prints information about number of found palindromic words and parallel execution time. */
     std::cout << "Found " << palindromic.size() << " words in " << end_time - start_time << "." << std::endl;
-    return EXIT_SUCCESS;
+    return EXIT_SUCCESS; /* EXIT_SUCCESS (0) to prevent anything else than 0 being returned upon successful execution,
+                            make will read return value and report anything other than EXIT_SUCCESS (0). */
 }
