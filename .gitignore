@@ -15,3 +15,6 @@
 *.exe
 *.out
 *.app
+
+# Dictionary used in lab2/uppg3
+lab2/uppg3/words
