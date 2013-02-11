@@ -1,78 +1,78 @@
 /* matrix summation using OpenMP
 
    usage with gcc (version 4.2 or higher required):
-     gcc -O -fopenmp -o matrixSum-openmp matrixSum-openmp.c 
-     ./matrixSum-openmp size numWorkers
+   gcc -O -fopenmp -o matrixSum-openmp matrixSum-openmp.c 
+   ./matrixSum-openmp size numWorkers
 
 */
 
 #include <omp.h>
-
-double start_time, end_time;
-
 #include <stdio.h>
 #include <stdlib.h>
 #include <errno.h>
 #include <time.h>
-#define MAXSIZE 10000  /* maximum matrix size */
-#define MAXWORKERS 8   /* maximum number of workers */
-#define MAXNR 100
-#define MINNR 0
+#define MAXSIZE 30000   /* Maximum matrix size. */
+#define MAXWORKERS 8    /* Maximum number of workers. */
+#define MAXNR 100       /* Maximum number (- 1) in the array. */
+#define MINNR 0         /* Minumum number in the array. */
 
-int numWorkers;
-int size; 
-int matrix[MAXSIZE][MAXSIZE];
-void *Worker(void *);
+double start_time, end_time; /* Timestamps. */
+int numWorkers;         /* Number of workers used. */
+int size;               /* Size of the matrix used. */
+int *matrix;            /* The matrix, implemented as a vector. */
 
 /* read command line, initialize, and create threads */
 int main(int argc, char *argv[]) {
+    /* Initialize the ints used. */
     int i, j, total=0, min=MAXNR, max=MINNR -1, min_y=-1, min_x=-1, max_y=-1, max_x=-1;
 
-    /* read command line args if any */
+    /* Read command line args if any */
     size = (argc > 1)? atoi(argv[1]) : MAXSIZE;
     numWorkers = (argc > 2)? atoi(argv[2]) : MAXWORKERS;
     if (size > MAXSIZE) size = MAXSIZE;
     if (numWorkers > MAXWORKERS) numWorkers = MAXWORKERS;
 
+    /* Sets the number of threads used. */
     omp_set_num_threads(numWorkers);
 
-    srand(time(NULL));
-    /* initialize the matrix */
+    /* Allocates the matrix on the heap. */
+    matrix = malloc(sizeof(int) * size * size);
+
+    srand(time(NULL)); /* Seed the randomizer. */
+    /* Initialize the matrix. */
     for (i = 0; i < size; i++) {
-        printf("[ ");
         for (j = 0; j < size; j++) {
-            matrix[i][j] = (rand() % MAXNR) + MINNR;
-            printf(" %d", matrix[i][j]);
+            matrix[i*size+j] = (rand() % (MAXNR - MINNR)) + MINNR;
         }
-        printf(" ]\n");
     }
 
-    start_time = omp_get_wtime();
-    #pragma omp parallel for reduction (+:total) private(j)
-    for (i = 0; i < size; i++)
+    start_time = omp_get_wtime(); /* Reads the timer just before parallel part. */
+#pragma omp parallel for reduction (+:total) private(j)
+    for (i = 0; i < size; i++) /* Iterate over every row. */
     {
-        for (j = 0; j < size; j++)
+        for (j = 0; j < size; j++) /* Every column. */
         {
-            total += matrix[i][j];
-            if(matrix[i][j] < min)
+            total += matrix[i*size+j]; /* Update total. */
+            if(matrix[i*size+j] < min) /* Checks if min needs to be updated. */
             {
-                #pragma omp critical
+#pragma omp critical(update_min) /* Create critical section. */
                 {
-                    if(matrix[i][j] < min)
+                    if(matrix[i*size+j] < min) /* Check once more (another thread could've
+                                                  updated the min value. */
                     {
-                        min = matrix[i][j];
+                        min = matrix[i*size+j];
                         min_x = j;
                         min_y = i;
                     }    
                 }
             }
-            if(matrix[i][j] > max)
+            if(matrix[i*size+j] > max) /* Checks if max needs to be updated. */
             {
-                #pragma omp critical
+#pragma omp critical(update_max) /* Create another critical section (with different locks). */
                 {
-                    if(matrix[i][j] > max)
+                    if(matrix[i*size+j] > max) /* Check once more for the same reasoning as above. */
                     {
-                        max = matrix[i][j];
+                        max = matrix[i*size+j];
                         max_x = j;
                         max_y = i;
                     }
@@ -80,13 +80,17 @@ int main(int argc, char *argv[]) {
             }
         }
     }
-    /* implicit barrier */
+    /* Implicit barrier. */
 
-    end_time = omp_get_wtime();
+    end_time = omp_get_wtime(); /* Reads the timer after the parallel part. */
 
+    free(matrix); /* Frees the matrix. */
+
+    /* Prints the results and the time. */
     printf("The total is %d.\n", total);
     printf("Maximum is %d, and is located at %d,%d.\n", max, max_y, max_x);
     printf("Minimum is %d, and is located at %d,%d.\n", min, min_y, min_x);
     printf("It took %g seconds\n", end_time - start_time);
+
     return(EXIT_SUCCESS); /* If omitted error codes 23, 26 or 27 are returned to make. */
 }
