@@ -1,7 +1,7 @@
 .PHONY: run, clean
 
 ifndef SIZE
-SIZE=1000000
+SIZE=20000000
 endif
 ifndef NWORKERS
 NWORKERS=10
