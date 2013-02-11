@@ -62,4 +62,4 @@ threads used increases. The curve is sub-linear, which is to be expected.
 
 Fun fact when dynamic scheduling is used the execution time is significantly hit.
 This makes sense as the payload are about the same for every iteration in the loop
-and hence static scheduling makes sense to use.
+hence static scheduling makes sense to use.

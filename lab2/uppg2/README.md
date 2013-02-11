@@ -19,8 +19,7 @@ that can be set by the macro BREAKPOINT. The breakpoint used in the evaluation i
 
 ~~~ Evaluation ~~~
 
-Using a CPU with 8 hardware threads @ 2GHz because atlantis does not support
-OpenMP 3.0 (gcc version is 4.1)
+Using a CPU with 8 hardware threads @ 2GHz
 
 Results were achieved by runing the program five times and taking the median time.
 Size of array is 20 000 000 (this is because the sequential execution time
@@ -52,6 +51,4 @@ and then merge them. However, the merging needs to be done sequentially so there
 if anything, to be gained from this.
 
 The efficiency as can be seen in the efficiency table decreases rapidly when additional threads
-are used. For even more threads than 8 I think the trend would continue. I could not test this
-as Atlantis use gcc version 4.1 and thus does not support OpenMP 3.0 which is when tasks were
-implemented.
+are used. For even more threads than 8 I think the trend would continue.

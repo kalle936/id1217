@@ -4,6 +4,11 @@
    gcc -O -fopenmp -o matrixSum-openmp matrixSum-openmp.c 
    ./matrixSum-openmp size numWorkers
 
+   Make run will compile and run the program.
+
+   Size can be specified through SIZE and number of threads
+   can be specified through NWORKERS.
+
 */
 
 #include <omp.h>
