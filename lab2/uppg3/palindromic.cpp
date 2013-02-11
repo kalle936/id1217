@@ -93,7 +93,7 @@ int main(int argc, char ** argv)
         if(all_words.find(get_reverse(input[i])) != all_words.end())
         {
             /* Unordered_set is unfortunately not thread safe such as Microsoft's concurrent_unordered_set. */
-#pragma omp critical (insertion_palindromic)
+#pragma omp critical(insertion_palindromic)
             {
                 palindromic.insert(input[i]);
             }
