@@ -16,9 +16,11 @@
  * which compiles (if needed) and then runs the program.
  *
  * Run it through default make rule run. Specify number of threads by defining NT as the
- * number of threads wanted.
+ * number of threads wanted. The output file can also be specified by defining FP as the
+ * path to the desired file.
  *
- * Example = NT=4 make.
+ * Example =    "NT=4 make"
+ *              "FP=output NT=8 make"
  */
 
 #include <omp.h>
@@ -82,16 +84,16 @@ int main(int argc, char ** argv)
         words.close();
     }
     int i; /* Index for iterating over the vector with words. */
-    double start_time, end_time; /* Used for timing- */
+    double start_time, end_time; /* Used for timing. */
     start_time = omp_get_wtime(); /* Time just before parallel work start. */
-#pragma omp parallel for
+#pragma omp parallel for schedule(static)
     for(i = 0; i < input.size(); ++i)
     {
         /* If the reversed word exist in the unordered_set of all words it is palindromic. */
         if(all_words.find(get_reverse(input[i])) != all_words.end())
         {
             /* Unordered_set is unfortunately not thread safe such as Microsoft's concurrent_unordered_set. */
-#pragma omp critical
+#pragma omp critical (insertion_palindromic)
             {
                 palindromic.insert(input[i]);
             }
