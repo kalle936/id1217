@@ -1,10 +1,10 @@
 .PHONY: run, clean
 
 ifndef NRM
-NRM=1
+NRM=4
 endif
 ifndef NRW
-NRW=1
+NRW=4
 endif
 
 CC=gcc
