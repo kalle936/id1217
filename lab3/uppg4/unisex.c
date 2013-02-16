@@ -1,3 +1,18 @@
+/**
+ * Unisex toilet simulation with males and females represented as
+ * threads.
+ *
+ * Compile by using make file rule unisex.out. (Compiling is
+ * also done on demand when running the program.)
+ *
+ * Run the program through default make rule. (run)
+ * To specify number of males set NRM and to specify number of 
+ * females set NRW.
+ *
+ * Example usage: 
+ * > NRM=10 NRW=10 make
+ */
+
 #ifndef _REENTRANT
 #define _REENTRANT
 #endif
