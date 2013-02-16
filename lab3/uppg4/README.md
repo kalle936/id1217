@@ -52,20 +52,35 @@ The outline for the male and female run inside the loop is:
 Example run could be
 
 Male enter. /* Nobody inside, male can enter. */
+
 Male enter. /* Males inside and no females waiting, hence male can enter. */
+
 Female enter queue. /* Female cant enter because males are inside. */
+
 Male enter queue. /* Male cant enter due to there is a female waiting. */
+
 Female enter queue. /* Female cant enter because males are inside. */
+
 Male exits. /* One male still in bathroom. */
+
 Male exits. /* Last male exits and lets the head of the queue of females waiting know. */
+
 Female enter. /* Female enter and lets the other female in the queue know that they can 
+
                * enter aswell.*/
+
 Female enter. /* Other female enter aswell after being told they can enter. */
+
 Female exit. /* One female still in the bathroom. */
+
 Female exit. /* Last female exit the bathroom and lets the head of the male queue kow they
+
               * can enter aswell. */
+
 Male enter. /* Male enter. */
+
 Male exit. /* Male exit. */
+
 
 As we can see the second female can still enter the bathroom even though there is
 a male in the queue. This increases the efficiency of the bathroom significantly.
