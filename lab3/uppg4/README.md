@@ -76,14 +76,14 @@ using the bathroom.
 
 Worst case scenario described:
 
-Male enter.
-Female enter queue.
-Male enter queue. <- Us
-Male exit. <-- Males exit their turn.
-Female enter. <-- Females begin their turn.
-Female exit. <-- Females exit their turn.
-Male enter. <-- It is now our turn.
-...
+* Male enter.
+* Female enter queue.
+* Male enter queue. <- Us
+* Male exit. <-- Males exit their turn.
+* Female enter. <-- Females begin their turn.
+* Female exit. <-- Females exit their turn.
+* Male enter. <-- It is now our turn.
+* ...
 
 Of course in this scenario any number of males and females in the two turns can use the
 bathroom. However as they can all use the bathroom in parallel this does not matter in
