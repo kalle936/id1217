@@ -2,6 +2,7 @@
 #define __PPS_MONITOR
 
 #include <cstddef>
+#include <iostream>
 #include <pthread.h>
 
 class monitor
@@ -21,6 +22,8 @@ class monitor
         void woman_exit();
 
     private:
+        void print_status();
+
         pthread_cond_t man_cond;
         pthread_cond_t woman_cond;
         pthread_mutex_t lock;
