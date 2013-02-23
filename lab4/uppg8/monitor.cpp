@@ -14,9 +14,12 @@ monitor::monitor()
     men_waiting = 0;
     women_inside = 0;
     women_waiting = 0;
+
+    /* Read the timer the first time. */
+    read_timer();
 }
 
-/** 
+/**
  * Destructor. Nothing to do here as there are nothing saved on the heap.
  */
 monitor::~monitor()
@@ -32,7 +35,7 @@ monitor::~monitor()
  * inside the bathroom. One if there are any remaining men inside the bathroom and
  * one turn for the women.
  */
-void monitor::man_enter()
+void monitor::man_enter(long number)
 {
     pthread_mutex_lock(&lock); /* Lock to ensure mutual exclusion. */
 
@@ -40,7 +43,8 @@ void monitor::man_enter()
      * This variable will be broadcasted to by when the last female exits the bathroom.*/
     if(women_inside > 0 || women_waiting > 0)
     {
-        std::cout << "Man is trying to enter, but he has to wait." << std::endl;
+        std::cout << read_timer() << ": Man " << number <<
+            " is trying to enter, but he has to wait." << std::endl;
         men_waiting++; /* Signal that we have a man waiting to get inside. */
         print_status(); /* Prints status of the current state of the bathroom and queue. */
 
@@ -56,13 +60,15 @@ void monitor::man_enter()
         /* The man is now inside the bathroom. Update information to reflect this. */
         men_waiting--;
         men_inside++;
-        std::cout << "Man is entering after waiting in line." << std::endl;
+        std::cout << read_timer() << ": Man " << number << " is entering after waiting in line."
+            << std::endl;
     }
     /* Enter straight away because there are no women inside or waiting. */
     else
     {
         men_inside++;
-        std::cout << "Man entering without waiting." << std::endl;
+        std::cout << read_timer() << ": Man " << number << " entering without waiting."
+            << std::endl;
     }
     print_status(); /* Prints status of the current state of the bathroom and queue. */
     pthread_mutex_unlock(&lock); /* Unlock again because we no longer need mutual exclusion. */
@@ -74,11 +80,11 @@ void monitor::man_enter()
  * Updates counters and then checks if we were the last one to exit, if we were we need to
  * signal to the women waiting to enter.
  */
-void monitor::man_exit()
+void monitor::man_exit(long number)
 {
     pthread_mutex_lock(&lock); /* Lock to provide mutual exclusion. */
     men_inside--; /* Update counter. */
-    std::cout << "Man exiting bathroom." << std::endl;
+    std::cout << read_timer() << ": Man " << number << " exiting bathroom." << std::endl;
     /* If we were the last male to exit the bathroom we need to signal to any women
      * waiting to enter. */
     if(men_inside == 0)
@@ -105,7 +111,7 @@ void monitor::man_exit()
  * inside the bathroom; one if there are any remaining women inside the bathroom and
  * one turn for the men.
  */
-void monitor::woman_enter()
+void monitor::woman_enter(long number)
 {
     pthread_mutex_lock(&lock); /* Lock to provide mutual exclusion. */
     /* If we have to wait in line before entering the bathroom. Then we wait for the
@@ -113,7 +119,8 @@ void monitor::woman_enter()
      * by the last male to exit the bathroom. */
     if(men_inside > 0 || men_waiting > 0)
     {
-        std::cout << "Woman is trying to enter, but she has to wait." << std::endl;
+        std::cout << read_timer() << ": Woman " << number <<
+            " is trying to enter, but she has to wait." << std::endl;
         women_waiting++; /* Update counter of women waiting. */
         print_status(); /* Prints status of the current state of the bathroom and queue. */
         /* To ensure that it really is safe for us to enter the bathroom we surround the
@@ -127,13 +134,15 @@ void monitor::woman_enter()
         /* Update counters to reflect that we are inside the bathroom. */
         women_waiting--;
         women_inside++;
-        std::cout << "Woman is entering after waiting in line." << std::endl;
+        std::cout << read_timer() << ": Woman " << number <<
+            " is entering after waiting in line." << std::endl;
     }
     /* We are safe to enter straight away. */
     else
     {
         women_inside++; /* Update counter. */
-        std::cout << "Woman entering without waiting." << std::endl;
+        std::cout << read_timer() << ": Woman " << number << " entering without waiting."
+            << std::endl;
     }
     print_status(); /* Prints status of the current state of the bathroom and queue. */
     pthread_mutex_unlock(&lock); /* Unlock before we exit. */
@@ -145,11 +154,11 @@ void monitor::woman_enter()
  * Updates counters and then checks if we were the last one to exit, if we were we need to
  * signal to the men waiting to enter.
  */
-void monitor::woman_exit()
+void monitor::woman_exit(long number)
 {
     pthread_mutex_lock(&lock); /* Lock for mutual exclusion. */
     women_inside--; /* Update counter. */
-    std::cout << "Woman exiting bathroom." << std::endl;
+    std::cout << read_timer() << ": Woman " << number << " exiting bathroom." << std::endl;
     if(women_inside == 0) /* If we were the last women to exit we need to signal to the men. */
     {
         std::cout << "Last woman has exited the bathroom." << std::endl;
@@ -170,7 +179,26 @@ void monitor::woman_exit()
  */
 void monitor::print_status()
 {
-    std::cout << std::endl << "Men inside = " << men_inside << ", women inside = " 
-        << women_inside << std::endl << "Men waiting = " << men_waiting << 
+    std::cout << std::endl << "Men inside = " << men_inside << ", women inside = "
+        << women_inside << std::endl << "Men waiting = " << men_waiting <<
         ", women waiting = " << women_waiting << std::endl << std::endl;
+}
+
+/**
+ * Timer. First time called will be the starting time and any calls
+ * after will calculate the time that has passed since intial call.
+ *
+ * Taken from lab1.
+ */
+double monitor::read_timer() {
+    static bool initialized = false;
+    static struct timeval start;
+    struct timeval end;
+    if( !initialized )
+    {
+        gettimeofday( &start, NULL );
+        initialized = true;
+    }
+    gettimeofday( &end, NULL );
+    return (end.tv_sec - start.tv_sec) + 1.0e-6 * (end.tv_usec - start.tv_usec);
 }

@@ -12,7 +12,7 @@
 #define MAX_TIMES 40        /* Max times inside bathroom.   */
 #define MAX_TOILET_TIME 3   /* Max time inside bathroom.    */
 #define MIN_TOILET_TIME 1   /* Min time in bathroom.        */
-#define MAX_WAIT_TIME 10     /* Max time between visits.    */
+#define MAX_WAIT_TIME 10    /* Max time between visits.     */
 #define MIN_WAIT_TIME 2     /* Min time between visits.     */
 
 void * man(void *);         /* Simulation method for men.   */
@@ -36,6 +36,8 @@ int main(int argc, char ** argv)
 {
     pthread_t persons[MAX_MEN + MAX_WOMEN]; /* The threads are saved here. */
     pthread_attr_t attr; /* Attributes for the pthreads. */
+
+    long index; /* For 64-bit systems. */
 
     /* Set counter of bathroom visits to 0. */
     times_used = 0;
@@ -63,13 +65,13 @@ int main(int argc, char ** argv)
     srand(time(NULL));
 
     mon = new monitor(); /* Create the monitor. */
-    for(int i = 0; i < men; ++i) /* Spawn the men threads. */
+    for(index = 0; index < men; ++index) /* Spawn the men threads. */
     {
-        pthread_create(&persons[i], &attr, man, NULL);
+        pthread_create(&persons[index], &attr, man, (void *) index);
     }
-    for(int i = 0; i < men; ++i) /* Spawn the women threads. */
+    for(index = 0; index < men; ++index) /* Spawn the women threads. */
     {
-        pthread_create(&persons[men + i], &attr, woman, NULL);
+        pthread_create(&persons[men + index], &attr, woman, (void *) index);
     }
     for(int i = 0; i < men + women; ++i) /* Joins the threads again. */
     {
@@ -88,6 +90,7 @@ int main(int argc, char ** argv)
  */
 void * woman(void * input)
 {
+    long number = (long) input;
     while(true)
     {
         /* Sleep to simulate time before a bathroom visit is necessary. */
@@ -99,18 +102,18 @@ void * woman(void * input)
         }
 
         /* Enter the bathroom. */
-        mon->woman_enter();
+        mon->woman_enter(number);
+
+        /* Sleep to simulate a bathroom visit. */
+        sleep((rand() % (MAX_TOILET_TIME - MIN_TOILET_TIME)) + MIN_TOILET_TIME);
 
         /* Update times_used. */
         pthread_mutex_lock(&counter_lock);
         times_used++;
         pthread_mutex_unlock(&counter_lock);
 
-        /* Sleep to simulate a bathroom visit. */
-        sleep((rand() % (MAX_TOILET_TIME - MIN_TOILET_TIME)) + MIN_TOILET_TIME);
-
         /* Exit the bathroom. */
-        mon->woman_exit();
+        mon->woman_exit(number);
     }
 }
 
@@ -123,6 +126,7 @@ void * woman(void * input)
  */
 void * man(void * input)
 {
+    long number = (long) input;
     while(true)
     {
         /* Sleep to simulate time before a bathroom visit is necessary. */
@@ -134,17 +138,17 @@ void * man(void * input)
         }
 
         /* Enter the bathroom. */
-        mon->man_enter();
+        mon->man_enter(number);
+
+        /* Sleep to simulate a bathroom visit. */
+        sleep((rand() % (MAX_TOILET_TIME - MIN_TOILET_TIME)) + MIN_TOILET_TIME);
 
         /* Update times_used. */
         pthread_mutex_lock(&counter_lock);
         times_used++;
         pthread_mutex_unlock(&counter_lock);
 
-        /* Sleep to simulate a bathroom visit. */
-        sleep((rand() % (MAX_TOILET_TIME - MIN_TOILET_TIME)) + MIN_TOILET_TIME);
-
         /* Exit the bathroom. */
-        mon->man_exit();
+        mon->man_exit(number);
     }
 }

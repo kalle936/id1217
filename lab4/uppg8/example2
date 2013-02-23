@@ -1,719 +1,732 @@
-./unisex 10 15
-Man entering without waiting.
+./unisex 10 10
+2.00036: Man 4 entering without waiting.
 
 Men inside = 1, women inside = 0
 Men waiting = 0, women waiting = 0
 
-Man entering without waiting.
+2.00125: Man 2 entering without waiting.
 
 Men inside = 2, women inside = 0
 Men waiting = 0, women waiting = 0
 
-Man entering without waiting.
+2.00192: Woman 0 is trying to enter, but she has to wait.
 
-Men inside = 3, women inside = 0
-Men waiting = 0, women waiting = 0
-
-Woman is trying to enter, but she has to wait.
-
-Men inside = 3, women inside = 0
+Men inside = 2, women inside = 0
 Men waiting = 0, women waiting = 1
 
-Woman is trying to enter, but she has to wait.
+2.00257: Woman 4 is trying to enter, but she has to wait.
 
-Men inside = 3, women inside = 0
+Men inside = 2, women inside = 0
 Men waiting = 0, women waiting = 2
 
-Woman is trying to enter, but she has to wait.
-
-Men inside = 3, women inside = 0
-Men waiting = 0, women waiting = 3
-
-Man is trying to enter, but he has to wait.
-
-Men inside = 3, women inside = 0
-Men waiting = 1, women waiting = 3
-
-Man exiting bathroom.
-
-Men inside = 2, women inside = 0
-Men waiting = 1, women waiting = 3
-
-Woman is trying to enter, but she has to wait.
-
-Men inside = 2, women inside = 0
-Men waiting = 1, women waiting = 4
-
-Woman is trying to enter, but she has to wait.
-
-Men inside = 2, women inside = 0
-Men waiting = 1, women waiting = 5
-
-Man exiting bathroom.
+3.00199: Man 2 exiting bathroom.
 
 Men inside = 1, women inside = 0
-Men waiting = 1, women waiting = 5
+Men waiting = 0, women waiting = 2
 
-Man exiting bathroom.
+4.00066: Man 8 is trying to enter, but he has to wait.
+
+Men inside = 1, women inside = 0
+Men waiting = 1, women waiting = 2
+
+4.00132: Man 4 exiting bathroom.
 Last man has exited the bathroom.
 Signaling to the women to enter.
 
 Men inside = 0, women inside = 0
-Men waiting = 1, women waiting = 5
-
-Woman is entering after waiting in line.
-
-Men inside = 0, women inside = 1
-Men waiting = 1, women waiting = 4
-
-Woman is entering after waiting in line.
-
-Men inside = 0, women inside = 2
-Men waiting = 1, women waiting = 3
-
-Woman is entering after waiting in line.
-
-Men inside = 0, women inside = 3
 Men waiting = 1, women waiting = 2
 
-Woman is entering after waiting in line.
-
-Men inside = 0, women inside = 4
-Men waiting = 1, women waiting = 1
-
-Woman is entering after waiting in line.
-
-Men inside = 0, women inside = 5
-Men waiting = 1, women waiting = 0
-
-Man is trying to enter, but he has to wait.
-
-Men inside = 0, women inside = 5
-Men waiting = 2, women waiting = 0
-
-Man is trying to enter, but he has to wait.
-
-Men inside = 0, women inside = 5
-Men waiting = 3, women waiting = 0
-
-Man is trying to enter, but he has to wait.
-
-Men inside = 0, women inside = 5
-Men waiting = 4, women waiting = 0
-
-Woman is trying to enter, but she has to wait.
-
-Men inside = 0, women inside = 5
-Men waiting = 4, women waiting = 1
-
-Woman is trying to enter, but she has to wait.
-
-Men inside = 0, women inside = 5
-Men waiting = 4, women waiting = 2
-
-Woman is trying to enter, but she has to wait.
-
-Men inside = 0, women inside = 5
-Men waiting = 4, women waiting = 3
-
-Woman exiting bathroom.
-
-Men inside = 0, women inside = 4
-Men waiting = 4, women waiting = 3
-
-Woman exiting bathroom.
-
-Men inside = 0, women inside = 3
-Men waiting = 4, women waiting = 3
-
-Woman exiting bathroom.
-
-Men inside = 0, women inside = 2
-Men waiting = 4, women waiting = 3
-
-Man is trying to enter, but he has to wait.
-
-Men inside = 0, women inside = 2
-Men waiting = 5, women waiting = 3
-
-Man is trying to enter, but he has to wait.
-
-Men inside = 0, women inside = 2
-Men waiting = 6, women waiting = 3
-
-Man is trying to enter, but he has to wait.
-
-Men inside = 0, women inside = 2
-Men waiting = 7, women waiting = 3
-
-Woman is trying to enter, but she has to wait.
-
-Men inside = 0, women inside = 2
-Men waiting = 7, women waiting = 4
-
-Woman is trying to enter, but she has to wait.
-
-Men inside = 0, women inside = 2
-Men waiting = 7, women waiting = 5
-
-Woman is trying to enter, but she has to wait.
-
-Men inside = 0, women inside = 2
-Men waiting = 7, women waiting = 6
-
-Woman is trying to enter, but she has to wait.
-
-Men inside = 0, women inside = 2
-Men waiting = 7, women waiting = 7
-
-Woman exiting bathroom.
+4.00228: Woman 4 is entering after waiting in line.
 
 Men inside = 0, women inside = 1
-Men waiting = 7, women waiting = 7
+Men waiting = 1, women waiting = 1
 
-Woman exiting bathroom.
+4.00291: Woman 0 is entering after waiting in line.
+
+Men inside = 0, women inside = 2
+Men waiting = 1, women waiting = 0
+
+5.00029: Man 1 is trying to enter, but he has to wait.
+
+Men inside = 0, women inside = 2
+Men waiting = 2, women waiting = 0
+
+5.00102: Man 0 is trying to enter, but he has to wait.
+
+Men inside = 0, women inside = 2
+Men waiting = 3, women waiting = 0
+
+5.00167: Man 5 is trying to enter, but he has to wait.
+
+Men inside = 0, women inside = 2
+Men waiting = 4, women waiting = 0
+
+5.00235: Man 6 is trying to enter, but he has to wait.
+
+Men inside = 0, women inside = 2
+Men waiting = 5, women waiting = 0
+
+5.00295: Woman 4 exiting bathroom.
+
+Men inside = 0, women inside = 1
+Men waiting = 5, women waiting = 0
+
+6.0007: Man 9 is trying to enter, but he has to wait.
+
+Men inside = 0, women inside = 1
+Men waiting = 6, women waiting = 0
+
+6.00144: Woman 9 is trying to enter, but she has to wait.
+
+Men inside = 0, women inside = 1
+Men waiting = 6, women waiting = 1
+
+6.00216: Woman 8 is trying to enter, but she has to wait.
+
+Men inside = 0, women inside = 1
+Men waiting = 6, women waiting = 2
+
+6.00357: Woman 0 exiting bathroom.
 Last woman has exited the bathroom.
 Signaling to the men to enter.
 
 Men inside = 0, women inside = 0
-Men waiting = 7, women waiting = 7
+Men waiting = 6, women waiting = 2
 
-Man is entering after waiting in line.
+6.00444: Man 1 is entering after waiting in line.
 
 Men inside = 1, women inside = 0
-Men waiting = 6, women waiting = 7
+Men waiting = 5, women waiting = 2
 
-Man is entering after waiting in line.
+6.00509: Man 0 is entering after waiting in line.
 
 Men inside = 2, women inside = 0
-Men waiting = 5, women waiting = 7
+Men waiting = 4, women waiting = 2
 
-Man is entering after waiting in line.
+6.00573: Man 5 is entering after waiting in line.
 
 Men inside = 3, women inside = 0
-Men waiting = 4, women waiting = 7
+Men waiting = 3, women waiting = 2
 
-Man is entering after waiting in line.
+6.00638: Man 6 is entering after waiting in line.
 
 Men inside = 4, women inside = 0
-Men waiting = 3, women waiting = 7
+Men waiting = 2, women waiting = 2
 
-Man is entering after waiting in line.
+6.00701: Man 9 is entering after waiting in line.
 
 Men inside = 5, women inside = 0
-Men waiting = 2, women waiting = 7
+Men waiting = 1, women waiting = 2
 
-Man is entering after waiting in line.
+6.00765: Man 8 is entering after waiting in line.
+
+Men inside = 6, women inside = 0
+Men waiting = 0, women waiting = 2
+
+7.00089: Woman 2 is trying to enter, but she has to wait.
+
+Men inside = 6, women inside = 0
+Men waiting = 0, women waiting = 3
+
+7.0016: Woman 6 is trying to enter, but she has to wait.
+
+Men inside = 6, women inside = 0
+Men waiting = 0, women waiting = 4
+
+8.00084: Woman 1 is trying to enter, but she has to wait.
+
+Men inside = 6, women inside = 0
+Men waiting = 0, women waiting = 5
+
+8.00158: Woman 3 is trying to enter, but she has to wait.
+
+Men inside = 6, women inside = 0
+Men waiting = 0, women waiting = 6
+
+8.00228: Woman 5 is trying to enter, but she has to wait.
+
+Men inside = 6, women inside = 0
+Men waiting = 0, women waiting = 7
+
+8.00292: Man 4 is trying to enter, but he has to wait.
 
 Men inside = 6, women inside = 0
 Men waiting = 1, women waiting = 7
 
-Man is entering after waiting in line.
-
-Men inside = 7, women inside = 0
-Men waiting = 0, women waiting = 7
-
-Woman is trying to enter, but she has to wait.
-
-Men inside = 7, women inside = 0
-Men waiting = 0, women waiting = 8
-
-Woman is trying to enter, but she has to wait.
-
-Men inside = 7, women inside = 0
-Men waiting = 0, women waiting = 9
-
-Man exiting bathroom.
-
-Men inside = 6, women inside = 0
-Men waiting = 0, women waiting = 9
-
-Man exiting bathroom.
+8.0051: Man 1 exiting bathroom.
 
 Men inside = 5, women inside = 0
-Men waiting = 0, women waiting = 9
+Men waiting = 1, women waiting = 7
 
-Man exiting bathroom.
-
-Men inside = 4, women inside = 0
-Men waiting = 0, women waiting = 9
-
-Man is trying to enter, but he has to wait.
+8.00591: Man 0 exiting bathroom.
 
 Men inside = 4, women inside = 0
-Men waiting = 1, women waiting = 9
+Men waiting = 1, women waiting = 7
 
-Man is trying to enter, but he has to wait.
-
-Men inside = 4, women inside = 0
-Men waiting = 2, women waiting = 9
-
-Man is trying to enter, but he has to wait.
-
-Men inside = 4, women inside = 0
-Men waiting = 3, women waiting = 9
-
-Woman is trying to enter, but she has to wait.
-
-Men inside = 4, women inside = 0
-Men waiting = 3, women waiting = 10
-
-Woman is trying to enter, but she has to wait.
-
-Men inside = 4, women inside = 0
-Men waiting = 3, women waiting = 11
-
-Man exiting bathroom.
+8.00656: Man 5 exiting bathroom.
 
 Men inside = 3, women inside = 0
-Men waiting = 3, women waiting = 11
+Men waiting = 1, women waiting = 7
 
-Man exiting bathroom.
+8.0072: Man 6 exiting bathroom.
 
 Men inside = 2, women inside = 0
-Men waiting = 3, women waiting = 11
+Men waiting = 1, women waiting = 7
 
-Man exiting bathroom.
+8.00797: Man 9 exiting bathroom.
 
 Men inside = 1, women inside = 0
-Men waiting = 3, women waiting = 11
+Men waiting = 1, women waiting = 7
 
-Man exiting bathroom.
+8.00861: Man 8 exiting bathroom.
 Last man has exited the bathroom.
 Signaling to the women to enter.
 
 Men inside = 0, women inside = 0
-Men waiting = 3, women waiting = 11
+Men waiting = 1, women waiting = 7
 
-Woman is entering after waiting in line.
-
-Men inside = 0, women inside = 1
-Men waiting = 3, women waiting = 10
-
-Woman is entering after waiting in line.
-
-Men inside = 0, women inside = 2
-Men waiting = 3, women waiting = 9
-
-Woman is entering after waiting in line.
-
-Men inside = 0, women inside = 3
-Men waiting = 3, women waiting = 8
-
-Woman is entering after waiting in line.
-
-Men inside = 0, women inside = 4
-Men waiting = 3, women waiting = 7
-
-Woman is entering after waiting in line.
-
-Men inside = 0, women inside = 5
-Men waiting = 3, women waiting = 6
-
-Woman is entering after waiting in line.
-
-Men inside = 0, women inside = 6
-Men waiting = 3, women waiting = 5
-
-Woman is entering after waiting in line.
-
-Men inside = 0, women inside = 7
-Men waiting = 3, women waiting = 4
-
-Woman is entering after waiting in line.
-
-Men inside = 0, women inside = 8
-Men waiting = 3, women waiting = 3
-
-Woman is entering after waiting in line.
-
-Men inside = 0, women inside = 9
-Men waiting = 3, women waiting = 2
-
-Woman is entering after waiting in line.
-
-Men inside = 0, women inside = 10
-Men waiting = 3, women waiting = 1
-
-Woman is entering after waiting in line.
-
-Men inside = 0, women inside = 11
-Men waiting = 3, women waiting = 0
-
-Man is trying to enter, but he has to wait.
-
-Men inside = 0, women inside = 11
-Men waiting = 4, women waiting = 0
-
-Man is trying to enter, but he has to wait.
-
-Men inside = 0, women inside = 11
-Men waiting = 5, women waiting = 0
-
-Woman is trying to enter, but she has to wait.
-
-Men inside = 0, women inside = 11
-Men waiting = 5, women waiting = 1
-
-Woman exiting bathroom.
-
-Men inside = 0, women inside = 10
-Men waiting = 5, women waiting = 1
-
-Woman exiting bathroom.
-
-Men inside = 0, women inside = 9
-Men waiting = 5, women waiting = 1
-
-Woman exiting bathroom.
-
-Men inside = 0, women inside = 8
-Men waiting = 5, women waiting = 1
-
-Woman exiting bathroom.
-
-Men inside = 0, women inside = 7
-Men waiting = 5, women waiting = 1
-
-Woman exiting bathroom.
-
-Men inside = 0, women inside = 6
-Men waiting = 5, women waiting = 1
-
-Woman exiting bathroom.
-
-Men inside = 0, women inside = 5
-Men waiting = 5, women waiting = 1
-
-Woman exiting bathroom.
-
-Men inside = 0, women inside = 4
-Men waiting = 5, women waiting = 1
-
-Woman exiting bathroom.
-
-Men inside = 0, women inside = 3
-Men waiting = 5, women waiting = 1
-
-Woman exiting bathroom.
-
-Men inside = 0, women inside = 2
-Men waiting = 5, women waiting = 1
-
-Woman exiting bathroom.
+8.00947: Woman 8 is entering after waiting in line.
 
 Men inside = 0, women inside = 1
-Men waiting = 5, women waiting = 1
+Men waiting = 1, women waiting = 6
 
-Woman exiting bathroom.
-Last woman has exited the bathroom.
-Signaling to the men to enter.
+8.01017: Woman 2 is entering after waiting in line.
 
-Men inside = 0, women inside = 0
-Men waiting = 5, women waiting = 1
-
-Man is entering after waiting in line.
-
-Men inside = 1, women inside = 0
-Men waiting = 4, women waiting = 1
-
-Man is entering after waiting in line.
-
-Men inside = 2, women inside = 0
-Men waiting = 3, women waiting = 1
-
-Man is entering after waiting in line.
-
-Men inside = 3, women inside = 0
-Men waiting = 2, women waiting = 1
-
-Man is entering after waiting in line.
-
-Men inside = 4, women inside = 0
-Men waiting = 1, women waiting = 1
-
-Man is entering after waiting in line.
-
-Men inside = 5, women inside = 0
-Men waiting = 0, women waiting = 1
-
-Woman is trying to enter, but she has to wait.
-
-Men inside = 5, women inside = 0
-Men waiting = 0, women waiting = 2
-
-Man exiting bathroom.
-
-Men inside = 4, women inside = 0
-Men waiting = 0, women waiting = 2
-
-Man exiting bathroom.
-
-Men inside = 3, women inside = 0
-Men waiting = 0, women waiting = 2
-
-Man exiting bathroom.
-
-Men inside = 2, women inside = 0
-Men waiting = 0, women waiting = 2
-
-Man exiting bathroom.
-
-Men inside = 1, women inside = 0
-Men waiting = 0, women waiting = 2
-
-Woman is trying to enter, but she has to wait.
-
-Men inside = 1, women inside = 0
-Men waiting = 0, women waiting = 3
-
-Woman is trying to enter, but she has to wait.
-
-Men inside = 1, women inside = 0
-Men waiting = 0, women waiting = 4
-
-Man is trying to enter, but he has to wait.
-
-Men inside = 1, women inside = 0
-Men waiting = 1, women waiting = 4
-
-Woman is trying to enter, but she has to wait.
-
-Men inside = 1, women inside = 0
+Men inside = 0, women inside = 2
 Men waiting = 1, women waiting = 5
 
-Man exiting bathroom.
-Last man has exited the bathroom.
-Signaling to the women to enter.
+8.01081: Woman 6 is entering after waiting in line.
 
-Men inside = 0, women inside = 0
-Men waiting = 1, women waiting = 5
-
-Woman is entering after waiting in line.
-
-Men inside = 0, women inside = 1
+Men inside = 0, women inside = 3
 Men waiting = 1, women waiting = 4
 
-Woman is entering after waiting in line.
+8.01145: Woman 1 is entering after waiting in line.
 
-Men inside = 0, women inside = 2
+Men inside = 0, women inside = 4
 Men waiting = 1, women waiting = 3
 
-Woman is entering after waiting in line.
+8.01209: Woman 3 is entering after waiting in line.
 
-Men inside = 0, women inside = 3
+Men inside = 0, women inside = 5
 Men waiting = 1, women waiting = 2
 
-Woman is entering after waiting in line.
+8.01269: Woman 5 is entering after waiting in line.
 
-Men inside = 0, women inside = 4
+Men inside = 0, women inside = 6
 Men waiting = 1, women waiting = 1
 
-Woman is entering after waiting in line.
+8.01326: Woman 9 is entering after waiting in line.
 
-Men inside = 0, women inside = 5
+Men inside = 0, women inside = 7
 Men waiting = 1, women waiting = 0
 
-Man is trying to enter, but he has to wait.
+9.00033: Man 3 is trying to enter, but he has to wait.
 
-Men inside = 0, women inside = 5
+Men inside = 0, women inside = 7
 Men waiting = 2, women waiting = 0
 
-Man is trying to enter, but he has to wait.
+9.00098: Man 7 is trying to enter, but he has to wait.
 
-Men inside = 0, women inside = 5
+Men inside = 0, women inside = 7
 Men waiting = 3, women waiting = 0
 
-Man is trying to enter, but he has to wait.
+9.00163: Woman 7 is trying to enter, but she has to wait.
+
+Men inside = 0, women inside = 7
+Men waiting = 3, women waiting = 1
+
+9.01018: Woman 8 exiting bathroom.
+
+Men inside = 0, women inside = 6
+Men waiting = 3, women waiting = 1
+
+9.01087: Woman 2 exiting bathroom.
 
 Men inside = 0, women inside = 5
-Men waiting = 4, women waiting = 0
+Men waiting = 3, women waiting = 1
 
-Woman is trying to enter, but she has to wait.
-
-Men inside = 0, women inside = 5
-Men waiting = 4, women waiting = 1
-
-Woman is trying to enter, but she has to wait.
-
-Men inside = 0, women inside = 5
-Men waiting = 4, women waiting = 2
-
-Woman is trying to enter, but she has to wait.
-
-Men inside = 0, women inside = 5
-Men waiting = 4, women waiting = 3
-
-Man is trying to enter, but he has to wait.
-
-Men inside = 0, women inside = 5
-Men waiting = 5, women waiting = 3
-
-Woman exiting bathroom.
+9.01149: Woman 6 exiting bathroom.
 
 Men inside = 0, women inside = 4
-Men waiting = 5, women waiting = 3
+Men waiting = 3, women waiting = 1
 
-Woman exiting bathroom.
+9.01277: Woman 3 exiting bathroom.
 
 Men inside = 0, women inside = 3
-Men waiting = 5, women waiting = 3
+Men waiting = 3, women waiting = 1
 
-Woman exiting bathroom.
-
-Men inside = 0, women inside = 2
-Men waiting = 5, women waiting = 3
-
-Man is trying to enter, but he has to wait.
+9.01341: Woman 5 exiting bathroom.
 
 Men inside = 0, women inside = 2
-Men waiting = 6, women waiting = 3
+Men waiting = 3, women waiting = 1
 
-Man is trying to enter, but he has to wait.
-
-Men inside = 0, women inside = 2
-Men waiting = 7, women waiting = 3
-
-Woman is trying to enter, but she has to wait.
+10.0028: Man 2 is trying to enter, but he has to wait.
 
 Men inside = 0, women inside = 2
-Men waiting = 7, women waiting = 4
+Men waiting = 4, women waiting = 1
 
-Woman is trying to enter, but she has to wait.
+10.0044: Woman 0 is trying to enter, but she has to wait.
 
 Men inside = 0, women inside = 2
-Men waiting = 7, women waiting = 5
+Men waiting = 4, women waiting = 2
 
-Woman exiting bathroom.
+10.0095: Man 8 is trying to enter, but he has to wait.
+
+Men inside = 0, women inside = 2
+Men waiting = 5, women waiting = 2
+
+10.0122: Woman 1 exiting bathroom.
 
 Men inside = 0, women inside = 1
-Men waiting = 7, women waiting = 5
+Men waiting = 5, women waiting = 2
 
-Woman exiting bathroom.
+10.014: Woman 9 exiting bathroom.
 Last woman has exited the bathroom.
 Signaling to the men to enter.
 
 Men inside = 0, women inside = 0
-Men waiting = 7, women waiting = 5
+Men waiting = 5, women waiting = 2
 
-Man is entering after waiting in line.
+10.0149: Man 3 is entering after waiting in line.
 
 Men inside = 1, women inside = 0
-Men waiting = 6, women waiting = 5
+Men waiting = 4, women waiting = 2
 
-Man is entering after waiting in line.
+10.0156: Man 7 is entering after waiting in line.
 
 Men inside = 2, women inside = 0
-Men waiting = 5, women waiting = 5
+Men waiting = 3, women waiting = 2
 
-Man is entering after waiting in line.
+10.0162: Man 2 is entering after waiting in line.
 
 Men inside = 3, women inside = 0
-Men waiting = 4, women waiting = 5
+Men waiting = 2, women waiting = 2
 
-Man is entering after waiting in line.
+10.0168: Man 8 is entering after waiting in line.
+
+Men inside = 4, women inside = 0
+Men waiting = 1, women waiting = 2
+
+10.0174: Man 4 is entering after waiting in line.
+
+Men inside = 5, women inside = 0
+Men waiting = 0, women waiting = 2
+
+11.0086: Man 9 is trying to enter, but he has to wait.
+
+Men inside = 5, women inside = 0
+Men waiting = 1, women waiting = 2
+
+11.0156: Man 3 exiting bathroom.
+
+Men inside = 4, women inside = 0
+Men waiting = 1, women waiting = 2
+
+11.0163: Man 7 exiting bathroom.
+
+Men inside = 3, women inside = 0
+Men waiting = 1, women waiting = 2
+
+11.0169: Man 2 exiting bathroom.
+
+Men inside = 2, women inside = 0
+Men waiting = 1, women waiting = 2
+
+12.0066: Man 0 is trying to enter, but he has to wait.
+
+Men inside = 2, women inside = 0
+Men waiting = 2, women waiting = 2
+
+12.0175: Man 8 exiting bathroom.
+
+Men inside = 1, women inside = 0
+Men waiting = 2, women waiting = 2
+
+12.0182: Man 4 exiting bathroom.
+Last man has exited the bathroom.
+Signaling to the women to enter.
+
+Men inside = 0, women inside = 0
+Men waiting = 2, women waiting = 2
+
+12.0192: Woman 0 is entering after waiting in line.
+
+Men inside = 0, women inside = 1
+Men waiting = 2, women waiting = 1
+
+12.0199: Woman 7 is entering after waiting in line.
+
+Men inside = 0, women inside = 2
+Men waiting = 2, women waiting = 0
+
+13.0135: Woman 3 is trying to enter, but she has to wait.
+
+Men inside = 0, women inside = 2
+Men waiting = 2, women waiting = 1
+
+14.0036: Woman 4 is trying to enter, but she has to wait.
+
+Men inside = 0, women inside = 2
+Men waiting = 2, women waiting = 2
+
+14.0059: Man 1 is trying to enter, but he has to wait.
+
+Men inside = 0, women inside = 2
+Men waiting = 3, women waiting = 2
+
+14.0192: Man 4 is trying to enter, but he has to wait.
+
+Men inside = 0, women inside = 2
+Men waiting = 4, women waiting = 2
+
+14.0199: Woman 0 exiting bathroom.
+
+Men inside = 0, women inside = 1
+Men waiting = 4, women waiting = 2
+
+14.0206: Woman 7 exiting bathroom.
+Last woman has exited the bathroom.
+Signaling to the men to enter.
+
+Men inside = 0, women inside = 0
+Men waiting = 4, women waiting = 2
+
+14.0215: Man 0 is entering after waiting in line.
+
+Men inside = 1, women inside = 0
+Men waiting = 3, women waiting = 2
+
+14.0222: Man 1 is entering after waiting in line.
+
+Men inside = 2, women inside = 0
+Men waiting = 2, women waiting = 2
+
+14.0228: Man 4 is entering after waiting in line.
+
+Men inside = 3, women inside = 0
+Men waiting = 1, women waiting = 2
+
+14.0235: Man 9 is entering after waiting in line.
+
+Men inside = 4, women inside = 0
+Men waiting = 0, women waiting = 2
+
+15.0121: Woman 6 is trying to enter, but she has to wait.
+
+Men inside = 4, women inside = 0
+Men waiting = 0, women waiting = 3
+
+15.0142: Woman 5 is trying to enter, but she has to wait.
+
+Men inside = 4, women inside = 0
+Men waiting = 0, women waiting = 4
+
+15.0164: Man 3 is trying to enter, but he has to wait.
+
+Men inside = 4, women inside = 0
+Men waiting = 1, women waiting = 4
+
+15.0176: Man 2 is trying to enter, but he has to wait.
+
+Men inside = 4, women inside = 0
+Men waiting = 2, women waiting = 4
+
+16.0073: Man 5 is trying to enter, but he has to wait.
+
+Men inside = 4, women inside = 0
+Men waiting = 3, women waiting = 4
+
+16.0115: Woman 2 is trying to enter, but she has to wait.
 
 Men inside = 4, women inside = 0
 Men waiting = 3, women waiting = 5
 
-Man is entering after waiting in line.
+16.0129: Woman 1 is trying to enter, but she has to wait.
+
+Men inside = 4, women inside = 0
+Men waiting = 3, women waiting = 6
+
+16.0222: Man 0 exiting bathroom.
+
+Men inside = 3, women inside = 0
+Men waiting = 3, women waiting = 6
+
+16.0229: Man 1 exiting bathroom.
+
+Men inside = 2, women inside = 0
+Men waiting = 3, women waiting = 6
+
+16.0235: Man 4 exiting bathroom.
+
+Men inside = 1, women inside = 0
+Men waiting = 3, women waiting = 6
+
+16.0241: Man 9 exiting bathroom.
+Last man has exited the bathroom.
+Signaling to the women to enter.
+
+Men inside = 0, women inside = 0
+Men waiting = 3, women waiting = 6
+
+16.025: Woman 4 is entering after waiting in line.
+
+Men inside = 0, women inside = 1
+Men waiting = 3, women waiting = 5
+
+16.0256: Woman 6 is entering after waiting in line.
+
+Men inside = 0, women inside = 2
+Men waiting = 3, women waiting = 4
+
+16.0264: Woman 5 is entering after waiting in line.
+
+Men inside = 0, women inside = 3
+Men waiting = 3, women waiting = 3
+
+16.027: Woman 2 is entering after waiting in line.
+
+Men inside = 0, women inside = 4
+Men waiting = 3, women waiting = 2
+
+16.0276: Woman 1 is entering after waiting in line.
+
+Men inside = 0, women inside = 5
+Men waiting = 3, women waiting = 1
+
+16.0283: Woman 3 is entering after waiting in line.
+
+Men inside = 0, women inside = 6
+Men waiting = 3, women waiting = 0
+
+17.008: Man 6 is trying to enter, but he has to wait.
+
+Men inside = 0, women inside = 6
+Men waiting = 4, women waiting = 0
+
+17.011: Woman 8 is trying to enter, but she has to wait.
+
+Men inside = 0, women inside = 6
+Men waiting = 4, women waiting = 1
+
+17.0257: Woman 4 exiting bathroom.
+
+Men inside = 0, women inside = 5
+Men waiting = 4, women waiting = 1
+
+17.0264: Woman 6 exiting bathroom.
+
+Men inside = 0, women inside = 4
+Men waiting = 4, women waiting = 1
+
+17.0272: Woman 5 exiting bathroom.
+
+Men inside = 0, women inside = 3
+Men waiting = 4, women waiting = 1
+
+17.0283: Woman 1 exiting bathroom.
+
+Men inside = 0, women inside = 2
+Men waiting = 4, women waiting = 1
+
+17.029: Woman 3 exiting bathroom.
+
+Men inside = 0, women inside = 1
+Men waiting = 4, women waiting = 1
+
+18.0206: Woman 0 is trying to enter, but she has to wait.
+
+Men inside = 0, women inside = 1
+Men waiting = 4, women waiting = 2
+
+18.0241: Man 4 is trying to enter, but he has to wait.
+
+Men inside = 0, women inside = 1
+Men waiting = 5, women waiting = 2
+
+18.0277: Woman 2 exiting bathroom.
+Last woman has exited the bathroom.
+Signaling to the men to enter.
+
+Men inside = 0, women inside = 0
+Men waiting = 5, women waiting = 2
+
+18.0286: Man 2 is entering after waiting in line.
+
+Men inside = 1, women inside = 0
+Men waiting = 4, women waiting = 2
+
+18.0293: Man 5 is entering after waiting in line.
+
+Men inside = 2, women inside = 0
+Men waiting = 3, women waiting = 2
+
+18.03: Man 6 is entering after waiting in line.
+
+Men inside = 3, women inside = 0
+Men waiting = 2, women waiting = 2
+
+18.0306: Man 4 is entering after waiting in line.
+
+Men inside = 4, women inside = 0
+Men waiting = 1, women waiting = 2
+
+18.0312: Man 3 is entering after waiting in line.
+
+Men inside = 5, women inside = 0
+Men waiting = 0, women waiting = 2
+
+19.015: Woman 9 is trying to enter, but she has to wait.
+
+Men inside = 5, women inside = 0
+Men waiting = 0, women waiting = 3
+
+19.017: Man 7 is trying to enter, but he has to wait.
+
+Men inside = 5, women inside = 0
+Men waiting = 1, women waiting = 3
+
+19.0215: Woman 7 is trying to enter, but she has to wait.
+
+Men inside = 5, women inside = 0
+Men waiting = 1, women waiting = 4
+
+19.0236: Man 1 is trying to enter, but he has to wait.
+
+Men inside = 5, women inside = 0
+Men waiting = 2, women waiting = 4
+
+19.0272: Woman 6 is trying to enter, but she has to wait.
 
 Men inside = 5, women inside = 0
 Men waiting = 2, women waiting = 5
 
-Man is entering after waiting in line.
-
-Men inside = 6, women inside = 0
-Men waiting = 1, women waiting = 5
-
-Man is entering after waiting in line.
-
-Men inside = 7, women inside = 0
-Men waiting = 0, women waiting = 5
-
-Man exiting bathroom.
-
-Men inside = 6, women inside = 0
-Men waiting = 0, women waiting = 5
-
-Man exiting bathroom.
+19.029: Woman 1 is trying to enter, but she has to wait.
 
 Men inside = 5, women inside = 0
-Men waiting = 0, women waiting = 5
+Men waiting = 2, women waiting = 6
 
-Man exiting bathroom.
+19.0297: Man 2 exiting bathroom.
 
 Men inside = 4, women inside = 0
-Men waiting = 0, women waiting = 5
+Men waiting = 2, women waiting = 6
 
-Man exiting bathroom.
+19.0304: Man 5 exiting bathroom.
 
 Men inside = 3, women inside = 0
-Men waiting = 0, women waiting = 5
+Men waiting = 2, women waiting = 6
 
-Man exiting bathroom.
+19.031: Man 6 exiting bathroom.
 
 Men inside = 2, women inside = 0
-Men waiting = 0, women waiting = 5
+Men waiting = 2, women waiting = 6
 
-Man exiting bathroom.
+19.0317: Man 4 exiting bathroom.
 
 Men inside = 1, women inside = 0
-Men waiting = 0, women waiting = 5
+Men waiting = 2, women waiting = 6
 
-Man exiting bathroom.
+19.0323: Man 3 exiting bathroom.
 Last man has exited the bathroom.
 Signaling to the women to enter.
 
 Men inside = 0, women inside = 0
-Men waiting = 0, women waiting = 5
+Men waiting = 2, women waiting = 6
 
-Woman is entering after waiting in line.
+19.0331: Woman 0 is entering after waiting in line.
 
 Men inside = 0, women inside = 1
-Men waiting = 0, women waiting = 4
+Men waiting = 2, women waiting = 5
 
-Woman is entering after waiting in line.
+19.0338: Woman 9 is entering after waiting in line.
 
 Men inside = 0, women inside = 2
-Men waiting = 0, women waiting = 3
+Men waiting = 2, women waiting = 4
 
-Woman is entering after waiting in line.
+19.0344: Woman 7 is entering after waiting in line.
 
 Men inside = 0, women inside = 3
-Men waiting = 0, women waiting = 2
+Men waiting = 2, women waiting = 3
 
-Woman is entering after waiting in line.
+19.0351: Woman 6 is entering after waiting in line.
 
 Men inside = 0, women inside = 4
-Men waiting = 0, women waiting = 1
+Men waiting = 2, women waiting = 2
 
-Woman is entering after waiting in line.
+19.0357: Woman 1 is entering after waiting in line.
 
 Men inside = 0, women inside = 5
-Men waiting = 0, women waiting = 0
+Men waiting = 2, women waiting = 1
 
-Woman exiting bathroom.
+19.0363: Woman 8 is entering after waiting in line.
+
+Men inside = 0, women inside = 6
+Men waiting = 2, women waiting = 0
+
+20.0296: Woman 3 is trying to enter, but she has to wait.
+
+Men inside = 0, women inside = 6
+Men waiting = 2, women waiting = 1
+
+20.0345: Woman 9 exiting bathroom.
+
+Men inside = 0, women inside = 5
+Men waiting = 2, women waiting = 1
+
+20.0352: Woman 7 exiting bathroom.
 
 Men inside = 0, women inside = 4
-Men waiting = 0, women waiting = 0
+Men waiting = 2, women waiting = 1
 
-Woman exiting bathroom.
+21.0339: Woman 0 exiting bathroom.
 
 Men inside = 0, women inside = 3
-Men waiting = 0, women waiting = 0
+Men waiting = 2, women waiting = 1
 
-Woman exiting bathroom.
+21.0357: Woman 6 exiting bathroom.
 
 Men inside = 0, women inside = 2
-Men waiting = 0, women waiting = 0
+Men waiting = 2, women waiting = 1
 
-Woman exiting bathroom.
+21.0364: Woman 1 exiting bathroom.
+
+Men inside = 0, women inside = 1
+Men waiting = 2, women waiting = 1
+
+21.0371: Woman 8 exiting bathroom.
+Last woman has exited the bathroom.
+Signaling to the men to enter.
+
+Men inside = 0, women inside = 0
+Men waiting = 2, women waiting = 1
+
+21.0381: Man 1 is entering after waiting in line.
+
+Men inside = 1, women inside = 0
+Men waiting = 1, women waiting = 1
+
+21.0387: Man 7 is entering after waiting in line.
+
+Men inside = 2, women inside = 0
+Men waiting = 0, women waiting = 1
+
+22.0388: Man 1 exiting bathroom.
+
+Men inside = 1, women inside = 0
+Men waiting = 0, women waiting = 1
+
+23.0394: Man 7 exiting bathroom.
+Last man has exited the bathroom.
+Signaling to the women to enter.
+
+Men inside = 0, women inside = 0
+Men waiting = 0, women waiting = 1
+
+23.0404: Woman 3 is entering after waiting in line.
 
 Men inside = 0, women inside = 1
 Men waiting = 0, women waiting = 0
 
-Woman exiting bathroom.
+24.0411: Woman 3 exiting bathroom.
 Last woman has exited the bathroom.
 
 Men inside = 0, women inside = 0
