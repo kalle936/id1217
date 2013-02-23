@@ -12,7 +12,7 @@
 #define MAX_TIMES 40        /* Max times inside bathroom.   */
 #define MAX_TOILET_TIME 3   /* Max time inside bathroom.    */
 #define MIN_TOILET_TIME 1   /* Min time in bathroom.        */
-#define MAX_WAIT_TIME 10     /* Max time between visits.     */
+#define MAX_WAIT_TIME 10     /* Max time between visits.    */
 #define MIN_WAIT_TIME 2     /* Min time between visits.     */
 
 void * man(void *);         /* Simulation method for men.   */
@@ -22,54 +22,70 @@ void * woman(void *);       /* Simulation method for women. */
  * times the bathroom has been used. */
 int men, women, times_used;
 
+/* Lock for the counter to exit the simulation. */
 pthread_mutex_t counter_lock;
 
+/* The monitor for the bathroom. */
 monitor * mon;
 
+/**
+ * Main method. First initializes and then reads the input of how
+ * many men and women that should be in the simulation. Then
+ * creates the threads and then joins them again. */
 int main(int argc, char ** argv)
 {
-    pthread_t persons[MAX_MEN + MAX_WOMEN];
-    pthread_attr_t attr;
+    pthread_t persons[MAX_MEN + MAX_WOMEN]; /* The threads are saved here. */
+    pthread_attr_t attr; /* Attributes for the pthreads. */
 
-    men = MAX_MEN;
-    women = MAX_WOMEN;
+    /* Set counter of bathroom visits to 0. */
     times_used = 0;
 
-    if(argc < 3)
+    if(argc < 3) /* If unsufficient amount of arguments were supplied. */
     {
         std::cout << "Usage ./unisex NRW NRM" << std::endl;
         return EXIT_FAILURE;
     }
-    else
+    else /* Read the number of men and women. */
     {
+        /* We cap them at MAX_WOMEN and MAX_MEN. */
         women = (atoi(argv[1]) > MAX_WOMEN) ? MAX_WOMEN : atoi(argv[1]);
         men = (atoi(argv[2]) > MAX_MEN) ? MAX_MEN : atoi(argv[2]);
     }
 
+    /* Initialize the attributes. */
     pthread_attr_init(&attr);
     pthread_attr_setscope(&attr, PTHREAD_SCOPE_SYSTEM);
 
+    /* Initialize the lock. */
     pthread_mutex_init(&counter_lock, NULL);
 
+    /* Seed the randomizer with the time to provide different result every run. */
     srand(time(NULL));
 
-    mon = new monitor();
-    for(int i = 0; i < men; ++i)
+    mon = new monitor(); /* Create the monitor. */
+    for(int i = 0; i < men; ++i) /* Spawn the men threads. */
     {
         pthread_create(&persons[i], &attr, man, NULL);
     }
-    for(int i = 0; i < men; ++i)
+    for(int i = 0; i < men; ++i) /* Spawn the women threads. */
     {
         pthread_create(&persons[men + i], &attr, woman, NULL);
     }
-    for(int i = 0; i < men + women; ++i)
+    for(int i = 0; i < men + women; ++i) /* Joins the threads again. */
     {
         pthread_join(persons[i], NULL);
     }
-    delete mon;
+    delete mon; /* Delete the monitor when done. */
     return EXIT_SUCCESS;
 }
 
+/**
+ * Women method for simulating bathroom visits to a unisex toilet.
+ *
+ * First sleeps to simulate the time between bathroom breaks and then calls the
+ * monitor method woman_enter. Then simulate the bathroom visit by sleeping and
+ * finally exits the bathroom by calling the monitor method woman_exit.
+ */
 void * woman(void * input)
 {
     while(true)
@@ -77,7 +93,7 @@ void * woman(void * input)
         /* Sleep to simulate time before a bathroom visit is necessary. */
         sleep((rand() % (MAX_WAIT_TIME - MIN_WAIT_TIME)) + MIN_WAIT_TIME);
 
-        if(times_used >= MAX_TIMES)
+        if(times_used >= MAX_TIMES) /* If the simulation is done. */
         {
             pthread_exit(NULL);
         }
@@ -98,6 +114,13 @@ void * woman(void * input)
     }
 }
 
+/**
+ * Men method for simulating bathroom visits to a unisex toilet.
+ *
+ * First sleeps to simulate the time between bathroom breaks and then calls the
+ * monitor method man_enter. Then simulate the bathroom visit by sleeping and
+ * finally exits the bathroom by calling the monitor method man_exit.
+ */
 void * man(void * input)
 {
     while(true)
@@ -105,7 +128,7 @@ void * man(void * input)
         /* Sleep to simulate time before a bathroom visit is necessary. */
         sleep((rand() % (MAX_WAIT_TIME - MIN_WAIT_TIME)) + MIN_WAIT_TIME);
 
-        if(times_used >= MAX_TIMES)
+        if(times_used >= MAX_TIMES) /* If the simulation is done. */
         {
             pthread_exit(NULL);
         }
