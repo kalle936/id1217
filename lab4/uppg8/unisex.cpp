@@ -1,3 +1,18 @@
+/**
+ * Simulation of a unisex bathroom using monitor to
+ * provide synchronization.
+ *
+ * To run the program use the make file using default rule.
+ * Number of men and women can be specified using NRW and NRM.
+ * This will compile the program as well. To compile the program
+ * without running it use the rule unisex in Makefile.
+ *
+ * Example compile:
+ * make unisex
+ *
+ * Example run and compile:
+ * NRW=5 NRM=8 make
+
 #ifndef _REENTRANT
 #define _REENTRANT
 #endif

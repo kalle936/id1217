@@ -18,3 +18,15 @@ will have to wait for the opposite gender to enter the bathroom before you can e
 have to first wait for the rest of the persons inside the bathroom and then of the persons of the opposite
 gender waiting to enter the bathroom as well, then it is your turn. No deadlock can occur because the
 Coffman condition of circular wait can never arise.
+
+Two example runs can be found in the files example1 and example2.
+
+To run the program use the make file using default rule. Number of men and women can be specified using
+NRW and NRM. This will compile the program as well. To compile the program without running it use the
+rule unisex in Makefile.
+
+Example compile:
+> make unisex
+
+Example run and compile:
+> NRW=5 NRM=8 make
