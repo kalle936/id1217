@@ -1,0 +1,654 @@
+./feedthebear 20
+0.0003: Bee 1 fills the pot (1/50).
+0.000503: Bee 0 fills the pot (2/50).
+0.000574: Bee 9 fills the pot (3/50).
+0.000624: Bee 7 fills the pot (4/50).
+0.000686: Bee 6 fills the pot (5/50).
+
+0.000732: Bear wants more honey!
+0.000807: Bear is waiting for the pot to be full.
+
+0.000881: Bee 10 fills the pot (6/50).
+0.000945: Bee 5 fills the pot (7/50).
+0.000992: Bee 18 fills the pot (8/50).
+0.001037: Bee 12 fills the pot (9/50).
+0.00111: Bee 14 fills the pot (10/50).
+0.001154: Bee 16 fills the pot (11/50).
+0.001198: Bee 11 fills the pot (12/50).
+0.001241: Bee 19 fills the pot (13/50).
+0.001304: Bee 15 fills the pot (14/50).
+0.001347: Bee 13 fills the pot (15/50).
+0.00139: Bee 4 fills the pot (16/50).
+0.001434: Bee 2 fills the pot (17/50).
+0.001478: Bee 3 fills the pot (18/50).
+0.001521: Bee 8 fills the pot (19/50).
+0.001563: Bee 17 fills the pot (20/50).
+0.001615: Bee 0 fills the pot (21/50).
+0.001685: Bee 1 fills the pot (22/50).
+0.001738: Bee 7 fills the pot (23/50).
+0.001794: Bee 9 fills the pot (24/50).
+0.001837: Bee 6 fills the pot (25/50).
+0.001884: Bee 10 fills the pot (26/50).
+0.001927: Bee 5 fills the pot (27/50).
+0.00197: Bee 18 fills the pot (28/50).
+0.002014: Bee 12 fills the pot (29/50).
+0.002079: Bee 14 fills the pot (30/50).
+0.00212: Bee 16 fills the pot (31/50).
+0.00216: Bee 2 fills the pot (32/50).
+0.002202: Bee 15 fills the pot (33/50).
+0.002242: Bee 11 fills the pot (34/50).
+0.002287: Bee 13 fills the pot (35/50).
+0.002329: Bee 19 fills the pot (36/50).
+0.002393: Bee 17 fills the pot (37/50).
+0.002432: Bee 18 fills the pot (38/50).
+0.002478: Bee 4 fills the pot (39/50).
+0.002519: Bee 1 fills the pot (40/50).
+0.002561: Bee 0 fills the pot (41/50).
+0.002603: Bee 8 fills the pot (42/50).
+0.002646: Bee 5 fills the pot (43/50).
+0.002687: Bee 7 fills the pot (44/50).
+0.002727: Bee 9 fills the pot (45/50).
+0.002769: Bee 6 fills the pot (46/50).
+0.002808: Bee 13 fills the pot (47/50).
+0.002848: Bee 3 fills the pot (48/50).
+0.002892: Bee 10 fills the pot (49/50).
+0.002934: Bee 15 fills the pot (50/50).
+0.00298: Bee 2 wakes the bear and waits for the pot to be empty.
+
+0.00303: Bear ate all the honey!
+
+The bear has now eaten 1 out of 10 times.
+0.003147: Bee 2 fills the pot (1/50).
+0.003229: Bee 11 fills the pot (2/50).
+0.003275: Bee 4 fills the pot (3/50).
+0.003327: Bee 18 fills the pot (4/50).
+0.00337: Bee 14 fills the pot (5/50).
+0.003414: Bee 19 fills the pot (6/50).
+0.003461: Bee 5 fills the pot (7/50).
+0.00353: Bee 1 fills the pot (8/50).
+0.003581: Bee 17 fills the pot (9/50).
+0.003622: Bee 12 fills the pot (10/50).
+0.003665: Bee 0 fills the pot (11/50).
+0.00373: Bee 9 fills the pot (12/50).
+0.003778: Bee 13 fills the pot (13/50).
+0.003826: Bee 8 fills the pot (14/50).
+0.003869: Bee 14 fills the pot (15/50).
+0.003914: Bee 6 fills the pot (16/50).
+0.003957: Bee 15 fills the pot (17/50).
+0.003999: Bee 16 fills the pot (18/50).
+0.004041: Bee 3 fills the pot (19/50).
+
+0.004087: Bear wants more honey!
+0.004157: Bear is waiting for the pot to be full.
+
+0.004227: Bee 10 fills the pot (20/50).
+0.004268: Bee 4 fills the pot (21/50).
+0.004309: Bee 11 fills the pot (22/50).
+0.004364: Bee 18 fills the pot (23/50).
+0.004406: Bee 2 fills the pot (24/50).
+0.004472: Bee 19 fills the pot (25/50).
+0.004522: Bee 17 fills the pot (26/50).
+0.004564: Bee 10 fills the pot (27/50).
+0.004602: Bee 18 fills the pot (28/50).
+0.00464: Bee 1 fills the pot (29/50).
+0.004684: Bee 5 fills the pot (30/50).
+0.004726: Bee 14 fills the pot (31/50).
+0.004792: Bee 18 fills the pot (32/50).
+0.004865: Bee 9 fills the pot (33/50).
+0.004922: Bee 13 fills the pot (34/50).
+0.004967: Bee 19 fills the pot (35/50).
+0.005028: Bee 5 fills the pot (36/50).
+0.005067: Bee 8 fills the pot (37/50).
+0.005109: Bee 3 fills the pot (38/50).
+0.005149: Bee 4 fills the pot (39/50).
+0.005191: Bee 16 fills the pot (40/50).
+0.005233: Bee 7 fills the pot (41/50).
+0.005277: Bee 14 fills the pot (42/50).
+0.005318: Bee 11 fills the pot (43/50).
+0.005365: Bee 2 fills the pot (44/50).
+0.005405: Bee 17 fills the pot (45/50).
+0.005445: Bee 0 fills the pot (46/50).
+0.005487: Bee 15 fills the pot (47/50).
+0.005572: Bee 10 fills the pot (48/50).
+0.005613: Bee 18 fills the pot (49/50).
+0.005657: Bee 6 fills the pot (50/50).
+0.005713: Bee 1 wakes the bear and waits for the pot to be empty.
+0.005758: Bee 9 wakes the bear and waits for the pot to be empty.
+
+0.005799: Bear ate all the honey!
+
+The bear has now eaten 2 out of 10 times.
+0.005901: Bee 1 fills the pot (1/50).
+0.005981: Bee 8 fills the pot (2/50).
+0.00603: Bee 16 fills the pot (3/50).
+0.006075: Bee 13 fills the pot (4/50).
+0.006116: Bee 11 fills the pot (5/50).
+0.006162: Bee 7 fills the pot (6/50).
+0.006204: Bee 19 fills the pot (7/50).
+0.006249: Bee 0 fills the pot (8/50).
+0.006291: Bee 3 fills the pot (9/50).
+0.006331: Bee 17 fills the pot (10/50).
+0.006373: Bee 14 fills the pot (11/50).
+0.006415: Bee 4 fills the pot (12/50).
+0.006456: Bee 12 fills the pot (13/50).
+0.006496: Bee 9 fills the pot (14/50).
+0.006537: Bee 5 fills the pot (15/50).
+0.00658: Bee 10 fills the pot (16/50).
+
+0.006621: Bear wants more honey!
+0.006693: Bear is waiting for the pot to be full.
+
+0.006769: Bee 2 fills the pot (17/50).
+0.006814: Bee 4 fills the pot (18/50).
+0.006856: Bee 5 fills the pot (19/50).
+0.006899: Bee 6 fills the pot (20/50).
+0.006943: Bee 16 fills the pot (21/50).
+0.006984: Bee 1 fills the pot (22/50).
+0.007026: Bee 13 fills the pot (23/50).
+0.007067: Bee 8 fills the pot (24/50).
+0.00711: Bee 0 fills the pot (25/50).
+0.007155: Bee 7 fills the pot (26/50).
+0.007196: Bee 17 fills the pot (27/50).
+0.007236: Bee 11 fills the pot (28/50).
+0.007277: Bee 3 fills the pot (29/50).
+0.007318: Bee 19 fills the pot (30/50).
+0.007365: Bee 9 fills the pot (31/50).
+0.007406: Bee 12 fills the pot (32/50).
+0.007448: Bee 15 fills the pot (33/50).
+0.007505: Bee 10 fills the pot (34/50).
+0.00755: Bee 18 fills the pot (35/50).
+0.007592: Bee 14 fills the pot (36/50).
+0.007636: Bee 2 fills the pot (37/50).
+0.00768: Bee 6 fills the pot (38/50).
+0.007725: Bee 4 fills the pot (39/50).
+0.007768: Bee 1 fills the pot (40/50).
+0.00781: Bee 0 fills the pot (41/50).
+0.007852: Bee 5 fills the pot (42/50).
+0.007891: Bee 16 fills the pot (43/50).
+0.007931: Bee 13 fills the pot (44/50).
+0.00799: Bee 8 fills the pot (45/50).
+0.008035: Bee 3 fills the pot (46/50).
+0.008074: Bee 11 fills the pot (47/50).
+0.008116: Bee 9 fills the pot (48/50).
+0.008158: Bee 17 fills the pot (49/50).
+0.008201: Bee 19 fills the pot (50/50).
+0.008243: Bee 7 wakes the bear and waits for the pot to be empty.
+
+0.008284: Bear ate all the honey!
+
+The bear has now eaten 3 out of 10 times.
+0.00839: Bee 10 fills the pot (1/50).
+0.008465: Bee 18 fills the pot (2/50).
+0.008506: Bee 6 fills the pot (3/50).
+0.008546: Bee 12 fills the pot (4/50).
+0.008598: Bee 17 fills the pot (5/50).
+0.008642: Bee 4 fills the pot (6/50).
+0.008684: Bee 1 fills the pot (7/50).
+0.008724: Bee 0 fills the pot (8/50).
+0.008767: Bee 2 fills the pot (9/50).
+0.008808: Bee 14 fills the pot (10/50).
+0.008851: Bee 8 fills the pot (11/50).
+0.008892: Bee 15 fills the pot (12/50).
+0.008932: Bee 3 fills the pot (13/50).
+0.008971: Bee 2 fills the pot (14/50).
+0.009011: Bee 7 fills the pot (15/50).
+
+0.009052: Bear wants more honey!
+0.009123: Bear is waiting for the pot to be full.
+
+0.009192: Bee 16 fills the pot (16/50).
+0.009232: Bee 9 fills the pot (17/50).
+0.009272: Bee 11 fills the pot (18/50).
+0.009312: Bee 5 fills the pot (19/50).
+0.009369: Bee 19 fills the pot (20/50).
+0.009417: Bee 18 fills the pot (21/50).
+0.009459: Bee 12 fills the pot (22/50).
+0.009527: Bee 10 fills the pot (23/50).
+0.009581: Bee 6 fills the pot (24/50).
+0.009621: Bee 13 fills the pot (25/50).
+0.009662: Bee 14 fills the pot (26/50).
+0.009707: Bee 0 fills the pot (27/50).
+0.009766: Bee 4 fills the pot (28/50).
+0.009811: Bee 17 fills the pot (29/50).
+0.009851: Bee 15 fills the pot (30/50).
+0.009897: Bee 1 fills the pot (31/50).
+0.009937: Bee 8 fills the pot (32/50).
+0.009978: Bee 7 fills the pot (33/50).
+0.010021: Bee 2 fills the pot (34/50).
+0.010064: Bee 16 fills the pot (35/50).
+0.010124: Bee 3 fills the pot (36/50).
+0.010161: Bee 17 fills the pot (37/50).
+0.010202: Bee 5 fills the pot (38/50).
+0.010285: Bee 9 fills the pot (39/50).
+0.010325: Bee 13 fills the pot (40/50).
+0.010367: Bee 14 fills the pot (41/50).
+0.010407: Bee 3 fills the pot (42/50).
+0.010448: Bee 18 fills the pot (43/50).
+0.010489: Bee 19 fills the pot (44/50).
+0.010532: Bee 6 fills the pot (45/50).
+0.010577: Bee 10 fills the pot (46/50).
+0.010621: Bee 15 fills the pot (47/50).
+0.010682: Bee 0 fills the pot (48/50).
+0.010733: Bee 13 fills the pot (49/50).
+0.010774: Bee 4 fills the pot (50/50).
+0.01082: Bee 10 wakes the bear and waits for the pot to be empty.
+0.010861: Bee 7 wakes the bear and waits for the pot to be empty.
+0.010903: Bee 5 wakes the bear and waits for the pot to be empty.
+0.010946: Bee 12 wakes the bear and waits for the pot to be empty.
+0.010993: Bee 8 wakes the bear and waits for the pot to be empty.
+0.011037: Bee 2 wakes the bear and waits for the pot to be empty.
+0.011079: Bee 17 wakes the bear and waits for the pot to be empty.
+0.011122: Bee 14 wakes the bear and waits for the pot to be empty.
+0.011162: Bee 11 wakes the bear and waits for the pot to be empty.
+0.011229: Bee 15 wakes the bear and waits for the pot to be empty.
+0.011287: Bee 9 wakes the bear and waits for the pot to be empty.
+0.011333: Bee 1 wakes the bear and waits for the pot to be empty.
+0.011379: Bee 16 wakes the bear and waits for the pot to be empty.
+
+0.011421: Bear ate all the honey!
+
+The bear has now eaten 4 out of 10 times.
+0.011542: Bee 18 fills the pot (1/50).
+0.011644: Bee 0 fills the pot (2/50).
+0.011704: Bee 19 fills the pot (3/50).
+0.011753: Bee 6 fills the pot (4/50).
+0.01181: Bee 18 fills the pot (5/50).
+0.011879: Bee 13 fills the pot (6/50).
+0.011934: Bee 3 fills the pot (7/50).
+0.011974: Bee 6 fills the pot (8/50).
+0.01202: Bee 5 fills the pot (9/50).
+0.012063: Bee 12 fills the pot (10/50).
+0.012107: Bee 8 fills the pot (11/50).
+0.01215: Bee 2 fills the pot (12/50).
+0.012192: Bee 17 fills the pot (13/50).
+0.012251: Bee 14 fills the pot (14/50).
+0.012313: Bee 11 fills the pot (15/50).
+0.012361: Bee 15 fills the pot (16/50).
+0.012425: Bee 9 fills the pot (17/50).
+0.01247: Bee 1 fills the pot (18/50).
+0.012519: Bee 16 fills the pot (19/50).
+0.012568: Bee 10 fills the pot (20/50).
+
+0.012609: Bear wants more honey!
+0.012683: Bear is waiting for the pot to be full.
+
+0.012755: Bee 4 fills the pot (21/50).
+0.012799: Bee 0 fills the pot (22/50).
+0.012841: Bee 7 fills the pot (23/50).
+0.012886: Bee 3 fills the pot (24/50).
+0.01293: Bee 19 fills the pot (25/50).
+0.012976: Bee 18 fills the pot (26/50).
+0.013019: Bee 6 fills the pot (27/50).
+0.013063: Bee 5 fills the pot (28/50).
+0.013126: Bee 13 fills the pot (29/50).
+0.013174: Bee 12 fills the pot (30/50).
+0.013232: Bee 8 fills the pot (31/50).
+0.013276: Bee 17 fills the pot (32/50).
+0.013319: Bee 2 fills the pot (33/50).
+0.013364: Bee 11 fills the pot (34/50).
+0.013404: Bee 15 fills the pot (35/50).
+0.013463: Bee 14 fills the pot (36/50).
+0.01351: Bee 16 fills the pot (37/50).
+0.013568: Bee 10 fills the pot (38/50).
+0.013615: Bee 1 fills the pot (39/50).
+0.013658: Bee 9 fills the pot (40/50).
+0.0137: Bee 4 fills the pot (41/50).
+0.013745: Bee 0 fills the pot (42/50).
+0.01379: Bee 19 fills the pot (43/50).
+0.013833: Bee 7 fills the pot (44/50).
+0.013875: Bee 18 fills the pot (45/50).
+0.013917: Bee 10 fills the pot (46/50).
+0.013957: Bee 8 fills the pot (47/50).
+0.013998: Bee 13 fills the pot (48/50).
+0.014044: Bee 12 fills the pot (49/50).
+0.014086: Bee 6 fills the pot (50/50).
+0.014126: Bee 17 wakes the bear and waits for the pot to be empty.
+
+0.014169: Bear ate all the honey!
+
+The bear has now eaten 5 out of 10 times.
+0.014278: Bee 2 fills the pot (1/50).
+0.014354: Bee 15 fills the pot (2/50).
+0.014396: Bee 11 fills the pot (3/50).
+0.014438: Bee 16 fills the pot (4/50).
+0.014478: Bee 1 fills the pot (5/50).
+0.014522: Bee 3 fills the pot (6/50).
+0.014562: Bee 7 fills the pot (7/50).
+0.014602: Bee 14 fills the pot (8/50).
+0.014644: Bee 19 fills the pot (9/50).
+0.014704: Bee 0 fills the pot (10/50).
+0.014745: Bee 9 fills the pot (11/50).
+0.014787: Bee 5 fills the pot (12/50).
+0.01491: Bee 18 fills the pot (13/50).
+0.01495: Bee 4 fills the pot (14/50).
+0.014991: Bee 13 fills the pot (15/50).
+0.015037: Bee 17 fills the pot (16/50).
+0.015077: Bee 8 fills the pot (17/50).
+
+0.015118: Bear wants more honey!
+0.01519: Bear is waiting for the pot to be full.
+
+0.015259: Bee 12 fills the pot (18/50).
+0.015299: Bee 10 fills the pot (19/50).
+0.015339: Bee 13 fills the pot (20/50).
+0.015382: Bee 15 fills the pot (21/50).
+0.015423: Bee 2 fills the pot (22/50).
+0.015464: Bee 1 fills the pot (23/50).
+0.015524: Bee 11 fills the pot (24/50).
+0.015567: Bee 14 fills the pot (25/50).
+0.015611: Bee 0 fills the pot (26/50).
+0.015651: Bee 3 fills the pot (27/50).
+0.015691: Bee 16 fills the pot (28/50).
+0.015731: Bee 9 fills the pot (29/50).
+0.015773: Bee 19 fills the pot (30/50).
+0.015834: Bee 7 fills the pot (31/50).
+0.015874: Bee 18 fills the pot (32/50).
+0.015918: Bee 5 fills the pot (33/50).
+0.015962: Bee 6 fills the pot (34/50).
+0.016004: Bee 4 fills the pot (35/50).
+0.016044: Bee 10 fills the pot (36/50).
+0.016086: Bee 8 fills the pot (37/50).
+0.016125: Bee 19 fills the pot (38/50).
+0.016165: Bee 12 fills the pot (39/50).
+0.016206: Bee 15 fills the pot (40/50).
+0.016251: Bee 1 fills the pot (41/50).
+0.016292: Bee 13 fills the pot (42/50).
+0.016333: Bee 2 fills the pot (43/50).
+0.01638: Bee 3 fills the pot (44/50).
+0.016421: Bee 11 fills the pot (45/50).
+0.016462: Bee 0 fills the pot (46/50).
+0.016503: Bee 14 fills the pot (47/50).
+0.016545: Bee 18 fills the pot (48/50).
+0.016584: Bee 17 fills the pot (49/50).
+0.016625: Bee 7 fills the pot (50/50).
+0.016666: Bee 9 wakes the bear and waits for the pot to be empty.
+0.016711: Bee 4 wakes the bear and waits for the pot to be empty.
+0.016751: Bee 16 wakes the bear and waits for the pot to be empty.
+0.016793: Bee 5 wakes the bear and waits for the pot to be empty.
+0.016852: Bee 1 wakes the bear and waits for the pot to be empty.
+0.016898: Bee 15 wakes the bear and waits for the pot to be empty.
+0.016943: Bee 8 wakes the bear and waits for the pot to be empty.
+0.017001: Bee 10 wakes the bear and waits for the pot to be empty.
+0.017049: Bee 6 wakes the bear and waits for the pot to be empty.
+0.017122: Bee 13 wakes the bear and waits for the pot to be empty.
+0.017203: Bee 11 wakes the bear and waits for the pot to be empty.
+0.017261: Bee 19 wakes the bear and waits for the pot to be empty.
+
+0.017324: Bear ate all the honey!
+
+The bear has now eaten 6 out of 10 times.
+0.017461: Bee 9 fills the pot (1/50).
+0.01753: Bee 0 fills the pot (2/50).
+0.017595: Bee 3 fills the pot (3/50).
+0.017645: Bee 14 fills the pot (4/50).
+0.017687: Bee 2 fills the pot (5/50).
+0.017748: Bee 7 fills the pot (6/50).
+0.017793: Bee 18 fills the pot (7/50).
+0.017833: Bee 17 fills the pot (8/50).
+0.017872: Bee 0 fills the pot (9/50).
+0.017914: Bee 16 fills the pot (10/50).
+0.017955: Bee 5 fills the pot (11/50).
+0.017998: Bee 1 fills the pot (12/50).
+0.018039: Bee 17 fills the pot (13/50).
+0.018081: Bee 8 fills the pot (14/50).
+0.018122: Bee 10 fills the pot (15/50).
+0.018163: Bee 6 fills the pot (16/50).
+0.018203: Bee 13 fills the pot (17/50).
+0.018249: Bee 11 fills the pot (18/50).
+0.018292: Bee 19 fills the pot (19/50).
+0.018352: Bee 12 fills the pot (20/50).
+
+0.018397: Bear wants more honey!
+0.018465: Bear is waiting for the pot to be full.
+
+0.018535: Bee 9 fills the pot (21/50).
+0.018576: Bee 4 fills the pot (22/50).
+0.018619: Bee 15 fills the pot (23/50).
+0.018664: Bee 18 fills the pot (24/50).
+0.018755: Bee 14 fills the pot (25/50).
+0.018795: Bee 3 fills the pot (26/50).
+0.018837: Bee 7 fills the pot (27/50).
+0.01888: Bee 9 fills the pot (28/50).
+0.018921: Bee 2 fills the pot (29/50).
+0.018961: Bee 5 fills the pot (30/50).
+0.019006: Bee 16 fills the pot (31/50).
+0.019048: Bee 1 fills the pot (32/50).
+0.019089: Bee 11 fills the pot (33/50).
+0.019128: Bee 17 fills the pot (34/50).
+0.019167: Bee 10 fills the pot (35/50).
+0.019207: Bee 13 fills the pot (36/50).
+0.019246: Bee 8 fills the pot (37/50).
+0.019287: Bee 6 fills the pot (38/50).
+0.01933: Bee 19 fills the pot (39/50).
+0.019371: Bee 12 fills the pot (40/50).
+0.019454: Bee 0 fills the pot (41/50).
+0.019528: Bee 4 fills the pot (42/50).
+0.01957: Bee 18 fills the pot (43/50).
+0.019612: Bee 15 fills the pot (44/50).
+0.019656: Bee 7 fills the pot (45/50).
+0.019696: Bee 9 fills the pot (46/50).
+0.019736: Bee 5 fills the pot (47/50).
+0.019776: Bee 6 fills the pot (48/50).
+0.019819: Bee 14 fills the pot (49/50).
+0.019861: Bee 3 fills the pot (50/50).
+0.019902: Bee 16 wakes the bear and waits for the pot to be empty.
+0.019945: Bee 17 wakes the bear and waits for the pot to be empty.
+0.019985: Bee 11 wakes the bear and waits for the pot to be empty.
+0.020041: Bee 13 wakes the bear and waits for the pot to be empty.
+0.020086: Bee 10 wakes the bear and waits for the pot to be empty.
+0.020142: Bee 1 wakes the bear and waits for the pot to be empty.
+0.020187: Bee 19 wakes the bear and waits for the pot to be empty.
+0.020249: Bee 8 wakes the bear and waits for the pot to be empty.
+0.020292: Bee 2 wakes the bear and waits for the pot to be empty.
+0.020366: Bee 0 wakes the bear and waits for the pot to be empty.
+0.020421: Bee 15 wakes the bear and waits for the pot to be empty.
+0.020464: Bee 4 wakes the bear and waits for the pot to be empty.
+0.020525: Bee 9 wakes the bear and waits for the pot to be empty.
+
+0.020581: Bear ate all the honey!
+
+The bear has now eaten 7 out of 10 times.
+0.020694: Bee 16 fills the pot (1/50).
+0.020771: Bee 12 fills the pot (2/50).
+0.02081: Bee 18 fills the pot (3/50).
+0.02085: Bee 14 fills the pot (4/50).
+0.020906: Bee 3 fills the pot (5/50).
+0.020954: Bee 5 fills the pot (6/50).
+0.021002: Bee 6 fills the pot (7/50).
+0.021043: Bee 17 fills the pot (8/50).
+0.021084: Bee 11 fills the pot (9/50).
+0.021126: Bee 13 fills the pot (10/50).
+0.021167: Bee 10 fills the pot (11/50).
+0.021207: Bee 1 fills the pot (12/50).
+0.021247: Bee 19 fills the pot (13/50).
+0.021289: Bee 8 fills the pot (14/50).
+0.021328: Bee 2 fills the pot (15/50).
+0.021368: Bee 0 fills the pot (16/50).
+0.02141: Bee 15 fills the pot (17/50).
+0.021453: Bee 1 fills the pot (18/50).
+0.021495: Bee 9 fills the pot (19/50).
+0.021535: Bee 7 fills the pot (20/50).
+
+0.021576: Bear wants more honey!
+0.021645: Bear is waiting for the pot to be full.
+
+0.021712: Bee 14 fills the pot (21/50).
+0.021752: Bee 16 fills the pot (22/50).
+0.021794: Bee 12 fills the pot (23/50).
+0.021834: Bee 7 fills the pot (24/50).
+0.021874: Bee 18 fills the pot (25/50).
+0.021915: Bee 13 fills the pot (26/50).
+0.021954: Bee 3 fills the pot (27/50).
+0.021998: Bee 4 fills the pot (28/50).
+0.022044: Bee 19 fills the pot (29/50).
+0.022087: Bee 5 fills the pot (30/50).
+0.02213: Bee 10 fills the pot (31/50).
+0.022172: Bee 6 fills the pot (32/50).
+0.022214: Bee 2 fills the pot (33/50).
+0.022253: Bee 11 fills the pot (34/50).
+0.022293: Bee 8 fills the pot (35/50).
+0.022332: Bee 0 fills the pot (36/50).
+0.022373: Bee 9 fills the pot (37/50).
+0.022413: Bee 17 fills the pot (38/50).
+0.022453: Bee 1 fills the pot (39/50).
+0.022493: Bee 15 fills the pot (40/50).
+0.022534: Bee 7 fills the pot (41/50).
+0.022574: Bee 13 fills the pot (42/50).
+0.022615: Bee 14 fills the pot (43/50).
+0.022655: Bee 3 fills the pot (44/50).
+0.022694: Bee 16 fills the pot (45/50).
+0.022735: Bee 12 fills the pot (46/50).
+0.022774: Bee 5 fills the pot (47/50).
+0.022813: Bee 18 fills the pot (48/50).
+0.022852: Bee 6 fills the pot (49/50).
+0.022893: Bee 4 fills the pot (50/50).
+0.022933: Bee 8 wakes the bear and waits for the pot to be empty.
+0.022972: Bee 14 wakes the bear and waits for the pot to be empty.
+0.023014: Bee 10 wakes the bear and waits for the pot to be empty.
+0.023054: Bee 2 wakes the bear and waits for the pot to be empty.
+0.023094: Bee 9 wakes the bear and waits for the pot to be empty.
+0.023135: Bee 0 wakes the bear and waits for the pot to be empty.
+0.023174: Bee 11 wakes the bear and waits for the pot to be empty.
+0.023211: Bee 5 wakes the bear and waits for the pot to be empty.
+0.023251: Bee 1 wakes the bear and waits for the pot to be empty.
+0.02329: Bee 17 wakes the bear and waits for the pot to be empty.
+
+0.02333: Bear ate all the honey!
+
+The bear has now eaten 8 out of 10 times.
+0.023472: Bee 8 fills the pot (1/50).
+0.023593: Bee 16 fills the pot (2/50).
+0.023672: Bee 13 fills the pot (3/50).
+0.023727: Bee 7 fills the pot (4/50).
+0.023771: Bee 6 fills the pot (5/50).
+0.023814: Bee 12 fills the pot (6/50).
+0.023854: Bee 18 fills the pot (7/50).
+0.023896: Bee 3 fills the pot (8/50).
+0.023942: Bee 15 fills the pot (9/50).
+0.023988: Bee 4 fills the pot (10/50).
+0.024029: Bee 14 fills the pot (11/50).
+0.024068: Bee 10 fills the pot (12/50).
+0.024109: Bee 2 fills the pot (13/50).
+0.024149: Bee 9 fills the pot (14/50).
+0.024189: Bee 0 fills the pot (15/50).
+0.024229: Bee 11 fills the pot (16/50).
+0.024268: Bee 5 fills the pot (17/50).
+0.024308: Bee 1 fills the pot (18/50).
+0.024348: Bee 17 fills the pot (19/50).
+0.024389: Bee 19 fills the pot (20/50).
+
+0.024432: Bear wants more honey!
+0.024501: Bear is waiting for the pot to be full.
+
+0.024569: Bee 8 fills the pot (21/50).
+0.02461: Bee 7 fills the pot (22/50).
+0.024652: Bee 13 fills the pot (23/50).
+0.024711: Bee 16 fills the pot (24/50).
+0.024755: Bee 12 fills the pot (25/50).
+0.024795: Bee 18 fills the pot (26/50).
+0.024836: Bee 14 fills the pot (27/50).
+0.024877: Bee 6 fills the pot (28/50).
+0.024918: Bee 4 fills the pot (29/50).
+0.024958: Bee 2 fills the pot (30/50).
+0.024998: Bee 3 fills the pot (31/50).
+0.025039: Bee 11 fills the pot (32/50).
+0.025078: Bee 17 fills the pot (33/50).
+0.025119: Bee 15 fills the pot (34/50).
+0.025164: Bee 1 fills the pot (35/50).
+0.025204: Bee 6 fills the pot (36/50).
+0.025244: Bee 9 fills the pot (37/50).
+0.025282: Bee 12 fills the pot (38/50).
+0.025323: Bee 0 fills the pot (39/50).
+0.025364: Bee 19 fills the pot (40/50).
+0.025406: Bee 8 fills the pot (41/50).
+0.025448: Bee 9 fills the pot (42/50).
+0.025489: Bee 7 fills the pot (43/50).
+0.025528: Bee 13 fills the pot (44/50).
+0.025569: Bee 14 fills the pot (45/50).
+0.025609: Bee 5 fills the pot (46/50).
+0.025648: Bee 3 fills the pot (47/50).
+0.025689: Bee 16 fills the pot (48/50).
+0.025728: Bee 13 fills the pot (49/50).
+0.025768: Bee 10 fills the pot (50/50).
+0.025812: Bee 17 wakes the bear and waits for the pot to be empty.
+
+0.025852: Bear ate all the honey!
+
+The bear has now eaten 9 out of 10 times.
+0.025957: Bee 17 fills the pot (1/50).
+0.026032: Bee 18 fills the pot (2/50).
+0.026073: Bee 1 fills the pot (3/50).
+0.026114: Bee 15 fills the pot (4/50).
+0.026156: Bee 0 fills the pot (5/50).
+0.026197: Bee 6 fills the pot (6/50).
+0.026238: Bee 11 fills the pot (7/50).
+0.026278: Bee 12 fills the pot (8/50).
+0.026321: Bee 9 fills the pot (9/50).
+0.026363: Bee 14 fills the pot (10/50).
+0.026404: Bee 4 fills the pot (11/50).
+0.026445: Bee 19 fills the pot (12/50).
+0.026487: Bee 3 fills the pot (13/50).
+0.026526: Bee 2 fills the pot (14/50).
+0.026568: Bee 7 fills the pot (15/50).
+0.026607: Bee 8 fills the pot (16/50).
+0.026646: Bee 5 fills the pot (17/50).
+
+0.026685: Bear wants more honey!
+0.026755: Bear is waiting for the pot to be full.
+
+0.026823: Bee 10 fills the pot (18/50).
+0.026867: Bee 16 fills the pot (19/50).
+0.026908: Bee 13 fills the pot (20/50).
+0.026948: Bee 17 fills the pot (21/50).
+0.026988: Bee 18 fills the pot (22/50).
+0.027028: Bee 15 fills the pot (23/50).
+0.027073: Bee 0 fills the pot (24/50).
+0.02713: Bee 9 fills the pot (25/50).
+0.027176: Bee 11 fills the pot (26/50).
+0.027217: Bee 1 fills the pot (27/50).
+0.02726: Bee 6 fills the pot (28/50).
+0.0273: Bee 12 fills the pot (29/50).
+0.027339: Bee 19 fills the pot (30/50).
+0.027384: Bee 2 fills the pot (31/50).
+0.027425: Bee 14 fills the pot (32/50).
+0.027463: Bee 15 fills the pot (33/50).
+0.027516: Bee 4 fills the pot (34/50).
+0.027557: Bee 3 fills the pot (35/50).
+0.027597: Bee 7 fills the pot (36/50).
+0.027637: Bee 5 fills the pot (37/50).
+0.027677: Bee 13 fills the pot (38/50).
+0.027717: Bee 10 fills the pot (39/50).
+0.027759: Bee 17 fills the pot (40/50).
+0.027799: Bee 0 fills the pot (41/50).
+0.027839: Bee 16 fills the pot (42/50).
+0.027879: Bee 8 fills the pot (43/50).
+0.027918: Bee 18 fills the pot (44/50).
+0.027958: Bee 12 fills the pot (45/50).
+0.027998: Bee 2 fills the pot (46/50).
+0.028074: Bee 9 fills the pot (47/50).
+0.028115: Bee 11 fills the pot (48/50).
+0.028156: Bee 19 fills the pot (49/50).
+0.028199: Bee 1 fills the pot (50/50).
+0.028239: Bee 14 wakes the bear and waits for the pot to be empty.
+
+0.02828: Bear ate all the honey!
+
+The bear has now eaten 10 out of 10 times.
+0.028528: Bee 14 fills the pot (1/50).
+0.028779: Bee 10 fills the pot (2/50).
+0.028969: Bee 3 fills the pot (3/50).
+0.029179: Bee 7 fills the pot (4/50).
+0.02938: Bee 4 fills the pot (5/50).
+0.029516: Bee 5 fills the pot (6/50).
+0.029669: Bee 0 fills the pot (7/50).
+0.029802: Bee 13 fills the pot (8/50).
+0.029993: Bee 18 fills the pot (9/50).
+0.030184: Bee 17 fills the pot (10/50).
+0.030317: Bee 12 fills the pot (11/50).
+0.030449: Bee 6 fills the pot (12/50).
+0.030575: Bee 2 fills the pot (13/50).
+0.03071: Bee 8 fills the pot (14/50).
+0.030894: Bee 9 fills the pot (15/50).
+0.031073: Bee 16 fills the pot (16/50).
+0.03121: Bee 1 fills the pot (17/50).
+0.031381: Bee 15 fills the pot (18/50).
