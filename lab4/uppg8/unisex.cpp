@@ -12,6 +12,7 @@
  *
  * Example run and compile:
  * NRW=5 NRM=8 make
+ */
 
 #ifndef _REENTRANT
 #define _REENTRANT
